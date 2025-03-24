@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid;
+            /* 背景颜色 */
+            background-color: orange;
+            /* 
+                背景图 
+                + url() 背景图的地址
+                + 显示规则
+                  => 当背景图小于容器大小时，背景图会默认进行平铺
+                  => 当背景图大于容器大小时，背景图某些区域显示不完整
+                  => 当背景图等于容器大小时，背景图刚好显示下
+            */
+            background-image: url("./img/test.png");
+            /* background-image: url("./img/1.jpg"); */
+            /*
+                repeat 平铺属性
+                + background-repeat: repeat; 默认值（平铺）
+                + background-repeat: no-repeat; 不平铺
+                + background-repeat: repeat-x; 水平平铺
+                + background-repeat: repeat-y; 垂直平铺
+            */
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /*
+                position 背景图位置属性
+                + 分写形式 
+                  => background-position-x
+                  => background-position-y
+                + 缩写形式
+                  => background-position: 值1（水平） 值2（垂直）;
+                + 属性值
+                  => 数值 + px
+                  => left
+                  => right
+                  => center
+                  => top
+                  => bottom
+            */
+            /* 
+                background-position-x: 100px;
+                background-position-y: 100px; 
+            */
+            /* background-position: right center; */
+            /* 注意点：如果只设置水平位置的值的话，那么垂直方向默认是居中的 */
+            /* background-position: right; */
+            /* background-position: right bottom; */
+            /*
+                size 背景图大小属性
+                + background-size: 值1（宽度） 值2（高度）;
+            */
+            background-size: 100px 50px;
+             /*
+                attachment 背景图固定属性
+                + background-attachment: scroll; 默认值（滚动）
+                + background-attachment: fixed; 背景图固定
+            */
+            /*
+                背景图缩写形式
+                + background: 值1 值2 值3 值4...;
+            */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            margin: 0 auto;
+            background-image: url("./img/bd2.png");
+            background-repeat: repeat-x;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <hr/>
+    <div class="box2"></div>
+</body>
+</html>

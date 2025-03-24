@@ -1,0 +1,218 @@
+/* 媒体查询限定 */
+
+/* 屏幕大于750px，根字体限制为75px */
+@media all and (min-width:750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* APP 容器 */
+#app {
+  margin: 0 auto;
+  width: 10rem;
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 版心居中 */
+.wrapper {
+  margin: 0 auto;
+  width: 9.0667rem;
+}
+
+/* 头部 start */
+header {
+  height: 1.0667rem;
+  width: 100%;
+  background: #fff;
+}
+
+/* 版心 */
+header .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 左侧表单搜索框 */
+header form {
+  padding-left: .1333rem;
+  display: flex;
+  height: .7467rem;
+  flex: 1;
+  background: #f1f4f6;
+  align-items: center;
+  border-radius: .1067rem;
+  border: .0267rem solid #dbdbdb;
+}
+
+header .icon-fangdajing {
+  font-size: .32rem;
+}
+
+header input {
+  padding-left: .2667rem;
+  flex: 1;
+  height: 100%;
+  margin-left: 0;
+  font-size: .32rem;
+  background: #f1f4f6;
+  border-radius: .1067rem;
+
+}
+
+/* 右侧购物车 */
+header .shopcart {
+  height: .7467rem;
+  display: flex;
+  align-items: center;
+}
+
+header .shopcart .iconfont {
+  font-size: .5333rem;
+  padding-left: .2667rem;
+  color: #f5363f;
+}
+
+/* 内容 main start */
+main {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+/* 轮播图 */
+main .banner {
+  height: 5.0667rem;
+  overflow: hidden;
+}
+
+main .banner ul {
+  width: 10rem;
+  display: flex;
+  animation: move 5s infinite linear;
+}
+
+main .banner ul li img {
+  width: 10rem;
+  height: 5.0667rem;
+}
+
+/* 定义位移动画；ul使用动画；鼠标悬停暂停动画 */
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-30rem);
+  }
+}
+
+.banner ul:hover {
+  animation-play-state: paused;
+}
+
+
+/* 权益 */
+section {
+  border-bottom: .0267rem solid #dbdbdb;
+  background: #fff;
+
+}
+
+section .wrapper {
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+}
+
+section ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section ul li {
+  width: 30%;
+  font-size: .32rem;
+  color: #5e5e5e;
+}
+
+section ul li .iconfont {
+  margin-right: .1333rem;
+  font-size: .4267rem;
+  color: #f5363f;
+}
+
+/* 导航 */
+nav {
+  margin-top: .2667rem;
+  padding: .2667rem;
+  height: 5.0667rem;
+  width: 100%;
+  background: #fff;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  width: 25%;
+  text-align: center;
+  font-size: .32rem;
+}
+
+nav ul li img {
+  width: 1.5467rem;
+  height: 1.5467rem;
+  border-radius: 50%;
+  margin-bottom: .1333rem;
+}
+
+/* 促销 */
+.Promotion {
+  background: #fff;
+  margin: .2667rem 0;
+  height: 2.4rem;
+  width: 100%;
+}
+
+
+
+
+/* 尾部 footer start */
+footer,
+footer .wrapper {
+  height: 1.3333rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+footer ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li {
+  width: 18%;
+  color: #929292;
+  font-size: .2667rem;
+  text-align: center;
+}
+
+footer ul li .iconfont {
+  display: block;
+  font-size: .5333rem;
+  margin-bottom: .1333rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .tab{
+            width: 286px;
+            height: 504px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 15px;
+        }
+        .tab .bd-border{
+            border-top: 1px solid #ccc;
+            position: relative;
+        }
+        .tab .top{
+            height: 450px;
+        }
+        .tab .bd-border h3{
+            width: 75px;
+            font-weight: normal;
+            font-size: 14px;
+            /* 注意点：如果背景图垂直位置不设置具体的值，那么默认就是 center */
+            background: #fff url("./img/reload.png") no-repeat 63px;
+            background-size: 15px 15px;
+            position: absolute;
+            left: 50%;
+            margin-left: -45px;
+            top: -10px;
+            color: #d1d2d7;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="top"></div>
+        <div class="bd-border">
+            <h3>换一换</h3>
+        </div>
+    </div>
+</body>
+</html>

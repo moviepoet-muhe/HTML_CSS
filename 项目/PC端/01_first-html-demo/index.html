@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网站优化 SEO：添加关键字和网站描述信息主要是通过技术手段来提高网站的搜索排名。你添加对象的信息，同类网站在搜索过程中，结果排名的时候会排在没有添加的网站的前面 -->
+    <!-- 网站关键字 -->
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜"/>
+    <!-- 网站描述信息 -->
+    <meta name="description" content="wangjiang.com-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。"/>
+    <title>第一个综合案例网站</title>
+    <!-- 状态栏图标：是给浏览器标题前面加图标的 -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 
+        网页布局方式
+        + 宽屏页面布局 
+        + 外层元素的宽度自适应的，中间内容区域是固定的
+        + 专业术语
+          => 外层宽度 自适应 + 版心 布局法
+        a 文字颜色继承问题
+        + a 标记是无法继承父元素的文字颜色的
+        + a 标记颜色要设置给 a 标记自身
+    -->
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+        </div>
+        <form>
+            <!-- 
+                注意点：
+                + 横向排列的元素，标记在代码里面进行换行操作的时候，标记和标记中间默认会存在一个空格 
+                + 浮动属性可以清除标记和标记之间的空格
+            -->
+            <input type="text" class="search" value="SEARCH...">
+            <input type="button" class="btn">
+        </form>
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <ul>
+            <li><a href="#">集团介绍</a></li>
+            <li><a href="#">产品中心</a></li>
+            <li><a href="#">王江市场</a></li>
+            <li><a href="#">技术研发</a></li>
+            <li><a href="#">国际合作</a></li>
+            <li><a href="#">投资者关系</a></li>
+            <li><a href="#">新闻资讯</a></li>
+            <li style="border-right: none;"><a href="#">人力资源</a></li>
+        </ul>
+    </nav>
+    
+    <!-- banner -->
+    <div class="banner"></div>
+
+    <!-- news -->
+    <div class="news">
+        <section class="left">
+            <h3>公司新闻</h3>
+            <ul>
+                <li><a href="#">陈建成董事长出席ATB集团召开年度销售大会</a><span>2024-12-19</span></li>
+                <li><a href="#">中国电器工业协会分马力电机分会在卧龙召开理事长..</a><span>2024-12-19</span></li>
+                <li><a href="#">陈建成董事长访问中国驻德大使馆</a><span>2024-12-19</span></li>
+                <li><a href="#">企业文化是企业特续经营的关键要素</a><span>2024-12-19</span></li>
+                <li><a href="#">陈建成监事长在ATB集团2013年销售会议上发表重要..</a><span>2024-12-19</span></li>
+                <li><a href="#">喜迎七- 唱响唱响年轻力量激发企业持久活力唱响举..</a><span>2024-12-19</span></li>
+            </ul>
+        </section>
+        <section class="center">
+            <h3>公司介绍</h3>
+            <p><span>公司成立于1984年，</span><br/> 实现员工与企业的共同发展</p>
+            <p class="p2">已成为电气制造，房地产开发和金融<br/>投资三业并举的综合性跨国..</p>
+        </section>
+        <section class="right">
+            <h3>人才招聘</h3>
+            <p>培养一流的人才,铸造- -流的工程<br/>实现员工与企业的共同发展</p>
+            <a href="#"><img src="./img/more.png"></a>
+        </section>
+    </div>
+</body>
+</html>

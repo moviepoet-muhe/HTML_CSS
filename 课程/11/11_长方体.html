@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            position: relative;
+            /* 可以把2D空间转成3D空间 */
+            transform-style: preserve-3d;
+            transform: rotateX(-22deg) rotateY(23deg) scaleZ(1.5);
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        /* 
+            位移，X轴左右，Y轴是上下，Z轴前后
+            旋转，X轴上下，Y轴是左右，Z轴顺时针或者逆时针 
+        */
+        ul li img{
+            width: 100%;
+            height: 100%;
+        }
+        ul li:nth-child(1){
+            background-color: hotpink;
+            transform: rotateX(90deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(2){
+            background-color: orange;
+            transform: rotateX(180deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(3){
+            background-color: skyblue;
+            transform: rotateX(270deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(4){
+            background-color: gold;
+            transform: rotateX(360deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(5){
+            background-color: greenyellow;
+            transform: translateX(-200px) rotateY(90deg);
+        }
+        ul li:nth-child(6){
+            background-color: orchid;
+            transform: translateX(200px) rotateY(90deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

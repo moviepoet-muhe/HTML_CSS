@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            /*
+                border 边框
+                + 分写形式
+                  => border-width
+                  => border-style
+                  => border-color
+                + 缩写形式
+                  => border: 值1（边框宽度） 值2（边框样式） 值3（边框颜色）;
+                  => border-left: 值1（边框宽度） 值2（边框样式） 值3（边框颜色）;
+                  => border-right: 值1（边框宽度） 值2（边框样式） 值3（边框颜色）;
+                  => border-top: 值1（边框宽度） 值2（边框样式） 值3（边框颜色）;
+                  => border-bottom: 值1（边框宽度） 值2（边框样式） 值3（边框颜色）;
+                + 取消边框
+                  => border: none | 0;
+                  => border-left: none | 0;
+                  => border-right: none | 0;
+                  => border-top: none | 0;
+                  => border-bottom: none | 0;
+                + 边框样式
+                  => solid 实线
+                  => dashed 虚线
+                  => dotted 点划（状）线
+                  => double 双线
+            */
+            width: 200px;
+            height: 200px;
+            /* 
+                border-width: 2px;
+                border-style: solid;
+                border-color: red; 
+            */
+            /* border: 2px solid red; */
+            /* 
+                border-left: 2px solid red;
+                border-right: 2px solid red;
+                border-top: 2px solid orange;
+                border-bottom: 2px solid orange; 
+            */
+            /* border: 2px dashed red; */
+            /* border: 5px dotted red; */
+            border: 5px double red;
+        }
+
+        ul {
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            /* 可以让元素在页面中水平居中 */
+            margin: 0 auto;
+        }
+
+        ul li {
+            list-style: none;
+            /* 取消列表符号 */
+            list-style-type: disc;
+            /* disc 实心圆 */
+            list-style-type: square;
+            /* square 小方块 */
+            list-style-type: circle;
+            /* circle 空心圆 */
+            list-style-position: inside;
+            /* 列表符号的位置 */
+            list-style-type: none;
+            /* === list-style: none; */
+        }
+
+        a {
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+
+        .p1 {
+            /* 下划线 */
+            text-decoration: underline;
+        }
+
+        .p2 {
+            /* 中划线（删除线） */
+            text-decoration: line-through;
+        }
+
+        .p3 {
+            /* 上划线 */
+            text-decoration: overline;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            margin: 0 auto;
+            /* 文字水平对齐方式 */
+            /* text-align: center; */
+            /* text-align: right; */
+            /* 两端对齐方式 */
+            text-align: justify;
+            /* line-height 行高属性，指的是文字行与行之间的距离 */
+            line-height: 30px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            margin: 0 auto;
+            /* 
+                行高使用的规则： 
+                + 条件
+                  => 只有一行文字的时候使用这个规则
+                + 规则
+                  => 当行高大于容器高度（父元素）的时候，可以实现文本垂直往下
+                  => 当行高小于容器高度（父元素）的时候，可以实现文本垂直往上
+                  => 当行高等于容器高度（父元素）的时候，可以实现文本垂直居中
+            */
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+
+    <ul>
+        <li>王江喜欢美女，也要记单词！</li>
+        <li>王江喜欢美女，也要记单词！</li>
+        <li>王江喜欢美女，也要记单词！</li>
+    </ul>
+
+    <a href="#">百度一下</a>
+    <p class="p1">百度一下</p>
+    <p class="p2">百度一下</p>
+    <p class="p3">百度一下</p>
+
+    <div class="box2">你好王江喜欢美女，也要记单词！王江喜欢美女，也要记单词！王江喜欢美女，也要记单词！</div>
+    <div class="box3">你好王江喜欢美女</div>
+</body>
+
+</html>

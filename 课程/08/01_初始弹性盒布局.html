@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+        }
+
+        .container1 div{
+            float: left;
+            margin: 0 66px;
+            margin-top: 50px;
+        }
+
+        .container2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>需求：容器里面有三个元素，元素的宽度和高度分别是 200 * 200，要求把子元素在容器里面垂直居中，在水平位置上子元素和子元素之间的距离是一样的</h3>
+    <p>之前的实现方式</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>使用 css3 提供的 flexbox 布局方式</p>
+    <!--
+        flexbox 布局
+        + 怎么把容器定义成弹性盒布局呢？
+          => display: flex; 
+        + 当容器变成弹性布局后有哪些变化呢？
+          => 会让容器里面的所有的子元素横向排列（row 水平，弹性盒默认的排列方式）
+          => 在弹性盒布局里面把父元素称之为容器（container），把子元素叫做项目（item）
+          => 弹性盒布局里面把水平方向叫做 主轴（row），把垂直方向叫做 侧轴 （column）
+          => 弹性盒布局可以实现布局的自适应，根据容器的大小自动伸缩改变元素的位置
+          => 弹性盒布局不需要你自己去手动计算，会根据容器来自动计算所需的位置
+          => ...
+        + 控制主轴方向的对齐方式的属性
+          => jusitify-content
+        + 控制侧轴方向的对齐方式的属性
+          => align-items
+    -->
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            /* 
+                transform: translateX(200px);
+                transform: translateY(200px); 
+            */
+            /* transform: translateX(200px) translateY(200px); */
+            transform: translate(200px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <!--
+        2D属性
+        + 平面空间，二维空间
+        + 变形属性
+          => transform
+          => 可以允许元素进行位移、缩放、旋转
+        translate
+        + 位移（就是元素的位置进行移动，会根据坐标轴（x、y、z）进行移动）
+        + translateX()
+        + translateY()
+        + translateZ()
+        + 缩写（复合写法）
+          => translate(值1, 值2) 
+          => 值1表示水平 值2表示垂直
+        注意点
+        + 两个 transform 之间会进行 覆盖
+    -->
+    <div></div>
+</body>
+</html>

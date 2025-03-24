@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wj{
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .wj div{
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            float: left;
+        }
+        .wj .son1{
+            background-color: skyblue;
+        }
+        .wj .son2{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        BFC 
+        + 概念（专业回答）
+        + 全称是 Block Formatting Context，即块格式化上下文
+        + 它是 Web 页面的可视 CSS 渲染的一部分，实际就是说 BFC 是一个渲染区域，并且有自己的一套渲染规则，使其内部布局的元素具有一些特性
+        + BFC 提供一个独立的布局环境，BFC 内部的元素布局与外部互不影响
+
+        BFC触发条件
+        + 根元素（<html>）
+        + 浮动元素（float不为none）
+        + 绝对定位元素（position为absolute或fixed）
+        + 表格的标题和单元格（display 为 table-caption，table-cell）
+        + 匿名表格单元格元素（display 为 table 或 inline-table）
+        + 行内块元素（display 为 inline-block）
+        + overflow 的值不为 visible 的元素
+        + 弹性元素（display 为 flex 或 inline-flex 的元素的直接子元素）
+        + 网格元素（display 为 grid 或 inline-grid 的元素的直接子元素）
+
+        BFC的特性
+        + BFC 是页面上的一个独立容器，容器里面的子元素不会影响外面的元素
+        + BFC 内部的块级盒会在垂直方向上一个接一个排列
+        + 同一 BFC 下的相邻块级元素可能发生外边距折叠，创建新的 BFC 可以避免外边距折叠
+        + 每个元素的外边距盒（margin box）的左边与包含块边框盒（border box）的左边相接触（从右向左的格式的话，则相反），即使存在浮动
+        + 浮动盒的区域不会和 BFC 重叠
+        + 计算 BFC 的高度时，浮动元素也会参与计算
+
+        BFC应用
+        + 清除浮动
+        + 解决margin上下值重叠问题
+        + 自适应两栏布局
+    -->
+    <div class="wj">
+        <div class="son1">大儿子</div>
+        <div class="son2">二儿子</div>
+    </div>
+</body>
+</html>

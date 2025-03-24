@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 网页头部header */
+.header {
+    width: 990px;
+    height: 80px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+/* 网页头部header下logo */
+.header .logo {
+    width: 173px;
+    height: 56px;
+    float: left;
+    margin-top: 13px;
+    margin-right: 22px;
+    background: url("./img/logo.png") no-repeat center center;
+    border: 1px solid yellow;
+}
+
+/* 网页头部header下“欢迎光临”welcome */
+.header .welcome {
+    width: 100px;
+    height: 30px;
+    margin-top: 34px;
+    float: left;
+    background: url("./img/l-icon.png") no-repeat center center;
+    border: 1px solid greenyellow;
+}
+
+/* 网页头部header下“登录页面，调查问卷”  */
+.header .question {
+    width: 133px;
+    height: 18px;
+    float: right;
+    margin-top: 53px;
+    border: 1px solid blue;
+}
+
+/* 网页头部header下“登录页面，调查问卷” a标签  */
+.header .question a {
+    background: url("./img/q-icon.png") no-repeat left 2px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999999;
+    font-size: 12px;
+    border: 1px solid pink;
+}
+
+/* **************************************法律提示信息law************************************** */
+.law {
+    width: 100%;
+    height: 40px;
+    background: #fff8f0;
+    text-align: center;
+}
+
+/* 法律提示信息law下的p标签  */
+.law p {
+    width: 800px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 40px;
+    background: url("./img/xx.png") no-repeat left center;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+/* 法律提示信息law下的p标签下的a链接样式 */
+.law p a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+/* **************************************banner背景区域banner-bg************************************** */
+.banner {
+    width: 100%;
+    height: 475px;
+    background-color: #dd2e12;
+}
+
+/* banner图片区域banner-img */
+.banner .banner-bg {
+    width: 990px;
+    height: 475px;
+    border: 1px solid yellowgreen;
+    margin: 0 auto;
+    background: url(./img/bb.jpg) no-repeat center center;
+}
+
+/* **********************banner图片区域banner-img下的form表单区域********************** */
+.banner .banner-bg form {
+    width: 347px;
+    height: 400px;
+    border: 1px solid yellowgreen;
+    float: right;
+    margin-top: 10px;
+    
+}
+/* 诈骗提示语tips */
+.banner .banner-bg form .tips{
+    width: 347px;
+    height: 39px;
+    background: #fff8f0 url(./img/xx.png) no-repeat 20px center;
+    font-size: 12px;
+    line-height: 39px;
+    text-align: center;
+}
+/* 登录文字栏login */
+.banner .banner-bg form .login{
+    width: 347px;
+    height: 54px;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    line-height: 54px;
+    border-bottom: 1px solid #f4f4f4;
+}
+/* 扫码登录scan */
+.banner .banner-bg form .login .scan{
+    text-decoration: none;
+    color: #666666;
+}
+/* 账户登录account */
+.banner .banner-bg form .login .account{
+    color: #e4393c;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* 扫码登录scan与账户登录account之间的span“|” */
+.banner .banner-bg form .login span{
+    color: #f4f4f4;
+}
+/* 输入框大div input-info */
+.banner .banner-bg form .input-info{
+    float: left;
+    width: 347px;
+    height: 255px;
+    background-color: white;
+    /* border: 1px solid blueviolet; */
+
+}
+/* 用户名div useraccount  */
+.banner .banner-bg form .input-info .useraccount {
+    width: 307px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* 用户名图标useraccount-icon */
+.banner .banner-bg form .input-info .useraccount-icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: #f3f3f3 url(./img/useraccount.png) no-repeat center center;
+}
+
+/* 用户名输入框useraccount */
+.banner .banner-bg form .input-info .useraccount-input{
+    float: left;
+    border: none;
+    height: 40px;
+    width: 256px;
+    outline: none;
+    line-height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-left: 1px solid #bdbdbd;
+}
+
+/* 密码div useraccount  */
+.banner .banner-bg form .input-info .password {
+    width: 307px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* 密码图标password-icon */
+.banner .banner-bg form .input-info .password-icon{
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: #f3f3f3 url(./img/password.png) no-repeat center center;
+}
+
+/* 密码输入框password */
+.banner .banner-bg form .input-info .password-input{
+    float: left;
+    border: none;
+    height: 40px;
+    width: 256px;
+    outline: none;
+    line-height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-left: 1px solid #bdbdbd;
+    
+}
+
+/* 忘记密码forgetpassword */
+.banner .banner-bg form .input-info .forgetpassword{
+    float: right;
+    margin-top: 22px;
+    margin-right: 21px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 20px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+/* 登录按钮 */
+.banner .banner-bg form .input-info .login-btn{
+    width: 303px;
+    height: 33px;
+    background-color: #e4393c;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    line-height: 33px;
+    border: none;
+    cursor: pointer;
+}
+/* 表单底部form-bottom */
+.form-bottom{
+    float: left;
+    width: 347px;
+    height: 50px;
+    background: yellow;
+
+}
+/* 表单底部form-bottom左侧p */
+.form-bottom p{
+    width: 306px;
+    height: 20px;
+    border: 1px solid yellowgreen;
+    font-size: 13px;
+    line-height: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+/* 表单底部form-bottom左侧p下两个图标 */
+.form-bottom p img{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+    float: left;
+    margin-right: 5px;
+}
+/* p下a链接 */
+.form-bottom p a{
+    text-decoration: none;
+    color: #666666;
+    float: left;
+    /* border: 1px solid red; */
+}
+/* p下a链接之间span“|” */
+.form-bottom p span{
+    float: left;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+
+/* 表单底部form-bottom 右侧图标 */
+.form-bottom p .right-point-icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 100px;
+}
+
+/* 表单底部form-bottom 右侧“立即注册” */
+.form-bottom p .register{
+    text-decoration: none;
+    color: #b61d1d;
+}
+
+/* ***************************网页尾部footer*************************** */
+.footer{
+    width: 100%;
+    height: 105px;
+    border: 1px solid blue;
+}
+/* 列表ul宽度 */
+.footer ul{
+
+    width: 846px;
+    height: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid yellowgreen;
+
+}
+/* 列表ul下的li样式 */
+.footer ul li{
+    line-height: 12px;
+    font-size: 12px;
+    float: left;
+    list-style: none;
+    border-right: 1px solid #666666;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+/* 列表ul下的li下的a标签样式 */
+.footer ul li a{
+    text-decoration: none;
+    color: #666666;
+}
+/* 列表ul下的最后一个li取消边框和内边距 */
+.footer ul .last-li{
+border: none;
+padding: right 0px;
+}
+
+/* 列表ul下的最后一个li取消边框和内边距 */
+.footer p{
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 260px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #666666;
+    border: 1px solid red;
+    }

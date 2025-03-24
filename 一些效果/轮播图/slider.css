@@ -1,0 +1,80 @@
+.banner {
+  margin: 100px auto;
+  width: 564px;
+  height: 315px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: hotpink;
+}
+
+.banner img {
+  display: block;
+  width: 564px;
+  border-radius: 10px;
+}
+
+.banner ul {
+  display: flex;
+}
+
+/* 切换箭头 */
+.banner .prev,
+.banner .next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner .prev {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.banner .next {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+  padding-left: 4px;
+}
+
+.banner:hover .prev,
+.banner:hover .next {
+  display: block;
+}
+
+/* 底部圆点 */
+.banner ol {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.banner ol li {
+  margin: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 橙色的li */
+.banner ol .active {
+  background-color: #ff5000;
+}
+
+.banner:hover ol {
+  opacity: 1;
+}

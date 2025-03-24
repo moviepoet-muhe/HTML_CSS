@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+        }
+        #two-base{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">我是第一个盒子</div>
+    <!-- 注意点：一个标记只能有一个 id 名称，这样写会导致两个名称都会失效 -->
+    <div id="box1 two-base">我是第二个盒子</div>
+    <div id="box1">我是第三个盒子</div>
+</body>
+</html>

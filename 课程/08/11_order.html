@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+            order: 3;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+            order: 2;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h3>8)显示顺序 order （加在子元素上）默认状态是按照标准流的顺序排列，在<span>flexbox</span>模型里，可以通过order改变伸缩项目的顺序</h3>
+    <p>a、不定义order的伸缩项目会排到前面 b、order：1； 排第一   order：2； 排第二</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

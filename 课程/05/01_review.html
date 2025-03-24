@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            width: 100px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        float 浮动
+        + 语法
+          => float: left | right | none;
+        + 作用
+          => 让自上而下排列的元素横向排列
+        + 定义
+          => 文本如何环绕该元素显示
+        + 标准流
+          => 就是正常的网页排版顺序
+        + 浮动流
+          => 一个元素设置了 float 属性后就成为浮动流
+        + 浮动使用注意事项
+          => 两个div，第一个浮动，第二个没有浮动，第一个会把第二个给覆盖掉
+          => 两个div，第二个浮动，第一个没有浮动，位置保持不变
+          => 两个div，都进行浮动，如果容器位置不够，第二个会被挤到第二行
+        + 清除浮动的方法
+          => clear: both;
+          => overflow: hidden;
+          => 万能清除方法
+          .parent::after{
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+          }
+        元素类型
+        + block
+        + inline
+        + inline-block
+        + none
+
+        布局逻辑
+        + 网页布局，先划分外层区域，再一块一块的划分小的区域
+        + margin 和 padding
+          => margin 是外边距
+          => padding 是内边距
+    -->
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">购物商城</a></li>
+        <li><a href="#">购物车</a></li>
+        <li><a href="#">商品列表</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">时装</a></li>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+</body>
+</html>

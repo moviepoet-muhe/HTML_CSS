@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+        }
+
+        .container1 div:nth-child(1){
+            align-self: flex-start;
+        }
+        .container3 div:nth-child(3){
+            align-self: flex-end;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>6)align-self（加在子元素上）：主要用来设置单独伸缩项目在侧轴的对齐方式。注意点：align-self可以覆盖align-items</h3>
+    <p>flex-start：伸缩项目在侧轴起点边的外边距 紧靠住 该行在侧轴起始边。默认值</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>center：伸缩项目的外边距在该行的侧轴上居中放置</p>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>flex-end：伸缩项目在侧轴终点边的外边距 紧靠住 该行在侧轴终点边</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

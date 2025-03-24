@@ -1,0 +1,349 @@
+/* 公共样式 */
+/* 版心 */
+.wrapper {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/* ---------------------头部快捷导航 */
+.shortcut {
+  position: sticky;
+  top: 0;
+  height: 30px;
+  background: #eee;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.shortcut .wrapper {
+  height: 30px;
+
+}
+
+.shortcut ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  line-height: 30px;
+}
+
+.shortcut li {
+  font-size: 14px;
+}
+
+.shortcut li .icon-shuma {
+  margin-right: 5px;
+}
+
+.shortcut li .icon-arrow-down-bold {
+  margin-left: 5px;
+  transition: all .2s ease;
+}
+
+.shortcut li .icon-shouhuodizhi {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+
+.shortcut li a {
+  padding: 0 10px;
+  display: inline-block;
+  height: 30px;
+  transition: all .2s ease;
+}
+
+.shortcut li a:hover {
+  color: #ff6704;
+}
+
+.shortcut li a:hover .icon-arrow-down-bold {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.shortcut .sep {
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #d4d4d4;
+}
+
+.shortcut li:first-child span {
+  font-size: 16px;
+  color: #ff6704;
+  margin-right: 20px;
+}
+
+.shortcut li:last-of-type {
+  margin-right: 10px;
+}
+
+.shortcut li:last-of-type span {
+  font-size: 16px;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+/* -----------------------------------网页头部 */
+header {
+  height: 76px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* logo区域 */
+header .logo {
+  width: 421px;
+  height: 63px;
+}
+
+header .logo img {
+  vertical-align: middle;
+}
+
+header .logo a {
+  font-size: 0;
+}
+
+/* 搜索区域 */
+header .search-box {
+  width: 340px;
+  display: flex;
+}
+
+header .search-input {
+  flex: 1;
+  padding-left: 10px;
+  border: 2px solid #d5d5d5;
+  border-right: none;
+}
+
+header .search-btn {
+  width: 65px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  background-color: #444444;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 3px;
+  cursor: pointer;
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 0.3),
+      #444444);
+}
+
+
+/* 热词 */
+header .hot-words {
+  width: 340px;
+  margin-top: 5px;
+}
+
+header .hot-words ul {
+  display: flex;
+}
+
+header .hot-words li:first-child {
+  color: #ff6704;
+}
+
+header .hot-words li {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+header .hot-words li:hover a {
+  color: #ff6704;
+}
+
+
+
+/* 购物车 */
+header .shopcart {
+  height: 34px;
+  margin-right: 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  transition: all .2s ease;
+}
+
+header .shopcart .icon-gouwuche {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all .2s ease;
+}
+
+header .shopcart a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+header .shopcart span {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+}
+
+header .shopcart:hover {
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 0.3),
+      #ff6704);
+}
+
+
+header .shopcart:hover .icon-gouwuche {
+  transform: scale(1.2);
+}
+
+
+/* 导航栏 */
+nav {
+  height: 34px;
+  background-color: #a21f25;
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  /* background-color: hotpink; */
+}
+
+nav .left {
+  display: flex;
+  position: relative;
+}
+
+/* 所有商品分类 */
+nav .left .sort {
+  height: 100%;
+  line-height: 34px;
+  padding: 0 20px;
+  /* background-color: #f4a318; */
+  border-right: 1px solid;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav .left .sort .icon-download {
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  color: #fff;
+  /* background-color: skyblue; */
+}
+
+nav .sep {
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+}
+
+nav .left .sort-box:hover .sort-list {
+  opacity: 1;
+  z-index: 99;
+}
+
+nav .left .sort-box:hover .sort {
+  color: #d4d4d4;
+}
+
+nav .left .sort-box:hover .iconfont {
+  transform: rotate(360deg);
+}
+
+nav li a {
+  transition: all .3s ease;
+}
+
+nav li a:hover {
+  color: #ff6704;
+}
+
+/* 所有商品下拉分类列表 */
+nav .left .sort-list {
+  position: absolute;
+  top: 34px;
+  width: 185px;
+  background: rgba(0, 0, 0, .25);
+  font-size: 14px;
+  opacity: 0;
+  z-index: -99;
+  transition: all .5s ease;
+}
+
+nav .left .sort-list ol li:hover {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+nav .left .sort-list ol li:hover a {
+  color: #ff6704;
+}
+
+nav .left .sort-list ol li:hover .iconfont {
+  color: #ff6704;
+}
+
+nav .left .sort-list ol li {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  line-height: 42px;
+  transition: all .3s ease;
+  /* background-color: gold; */
+}
+
+nav .left .sort-list a {
+  flex: 1;
+  /* background-color: skyblue; */
+  color: #fff;
+  text-align: center;
+}
+
+nav .left .sort-list .iconfont {
+  margin-left: 10px;
+  color: #fff;
+}
+
+
+/* 右侧上新区 */
+nav .right li:nth-child(3) {
+  position: relative;
+}
+
+nav .right li:nth-of-type(3)::after {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 33px;
+  height: 17px;
+  content: "";
+  background: url("../uploads/201410111038.gif") no-repeat -68px 0;
+
+}

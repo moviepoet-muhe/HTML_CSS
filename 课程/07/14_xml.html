@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: url("./img/phone.svg") no-repeat;
+            background-size: 66px 66px;
+        }
+        canvas{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        xml 
+        + 可扩展的标记语言
+        + 数据格式，用于前后端数据的交互，和 json 功能是一样的
+        + 和 html 标记的区别在于，html 标记是固定的，而 xml 标记是可以自定义的
+        + 描述数据
+          <shopping>
+              <id>1</id>
+              <title>小米手机</title>
+              <price>2999</price>
+          </shopping>
+        + svg 使用的语法其实就是 xml 标记的语法
+    -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+    </svg>
+
+    <img src="./img/phone.svg" alt="" width="50">
+
+    <div></div>
+
+    <!-- 画布 内联块标记 -->
+    <canvas>您的浏览器不支持 HTML5 canvas 标签。</canvas>
+    <canvas>您的浏览器不支持 HTML5 canvas 标签。</canvas>
+</body>
+</html>

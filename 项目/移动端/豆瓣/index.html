@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="豆瓣关键词">
+  <meta name="description" content="豆瓣描述">
+  <title>豆瓣</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+  <div id="app">
+    <!-- 头部 header -->
+    <header>
+      <div class="left"><i class="iconfont icon-xuanxiang"></i>
+      </div>
+      <div class="right">
+        <i class="iconfont icon-erji"></i>
+        <i class="iconfont icon-xinfeng"></i>
+      </div>
+    </header>
+
+    <!-- 内容 main -->
+    <main>
+
+      <!-- 个人介绍板块 -->
+      <div class="user-profile">
+        <!-- 个人介绍板块遮罩层 -->
+        <div class="app-mask"></div>
+
+        <!-- 个人介绍内容区域 start 绝对定位 层级上浮 -->
+        <div class="user-content">
+
+          <!-- 用户头像 -->
+          <div class="user-pic">
+            <img src="./img/logo.jpg" alt="">
+            <!-- 相机icon -->
+            <div class="photo-icon">
+              <i class="iconfont icon-zhaoxiangji"></i>
+            </div>
+          </div>
+
+          <!-- 用户名  -->
+          <div class="user-name">
+            <h3>牧和的诗</h3>
+            <div class="gender-bg"><i class="iconfont icon-xingbienan"></i></div>
+          </div>
+
+          <!-- 用户ID 与 IP -->
+          <div class="user-id">
+            <div class="author"><i class="iconfont icon-wubanhua"></i>作者</div>
+            <p>ID：<span>Flan20210724</span> / IP： <span><i>四川</i> / <i>邓为</i> / <i>牧和</i></span> </p>
+          </div>
+
+          <!-- 关于我 -->
+          <div class="aboutme">
+            <p>写诗的漆匠</p>
+            <div>关于我 <i class="iconfont icon-xiangxiajiantou"></i></div>
+          </div>
+
+          <!-- 关注 -->
+          <div class="follow">
+            <p>关注 <span>8</span>被关注 <span>204</span></p>
+            <i class="iconfont icon-xiangshangjiantou"></i>
+          </div>
+
+          <!-- 个人作品 -->
+          <div class="works">
+            <!-- 切换tap -->
+            <div class="works-tap">
+              <p>个人作品</p>
+              <div class="icon-bg"><i class="iconfont icon-gangbi"></i></div>
+              <span>成立小组</span>
+            </div>
+            <!-- 作品内容 -->
+            <div class="works-content">
+              <!-- 封面 -->
+              <div class="poster">
+                <img src="./img/zuopin.pic.jpg" alt="">
+              </div>
+              <!-- 介绍 -->
+              <div class="profile">
+                <div class="title">诗有了意义就没有了生命</div>
+                <div class="des"><span>暂无评分</span> / <span>香江出版社</span> / <span>2018</span></div>
+                <div class="writer">作者</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 个人介绍内容区域 stop -->
+
+      </div>
+      <!-- 个人介绍 stop -->
+
+      <!-- 主页 -->
+      <div class="index">
+        <div class="wrapper">
+
+          <!-- 选项切换卡 -->
+          <div class="tap">
+            <div class="left">
+              <ul>
+                <li>主页</li>
+                <li>动态</li>
+                <li>相册</li>
+              </ul>
+            </div>
+            <span class="sep"></span>
+            <div class="right">
+              <div><i class="iconfont icon-wubanhua"></i>徽章 <span>44</span></div>
+              <div class="icon-bg"><i class="iconfont icon-sousuo"></i></div>
+            </div>
+          </div>
+
+          <!-- 创建我的书影音  -->
+          <div class="create">
+            <div class="logo-pic"><img src="./img/logo.jpg" alt=""></div>
+            <p>创建我的书影音</p><span>T<i class="iconfont icon-aixin"></i>P10</span>
+          </div>
+
+          <!-- 书影音档案 -->
+          <div class="files">
+            <!-- top -->
+            <div class="files-top">
+              <div class="files-title">
+                书影音档案 <i class="iconfont icon-xiangyoujiantou"></i>
+              </div>
+              <div class="report">
+                <div class="pic"><img src="./img/2024.pic.jpg" alt=""></div>
+                <div class="txt">
+                  <p>点击查看</p>
+                  <p>2024年度报告</p>
+                </div>
+              </div>
+            </div>
+            <!-- 滑动栏视窗 -->
+            <div class="slider">
+              <ul>
+                <!-- 电影 -->
+                <li>
+                  <div class="title">影视<i class="iconfont icon-xiangyoujiantou"></i></div>
+                  <!-- 电影列表 -->
+                  <div class="movie-list">
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie1.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie-blank.png" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie2.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>看过</p>
+                        <p>2289</p>
+                      </div>
+                    </div>
+
+                    <!-- 收缩按钮 -->
+                    <div class="btn">
+                      <i class="iconfont icon-zuoshuangjiantou"></i>
+                    </div>
+
+                  </div>
+
+                </li>
+                <!-- 图书 -->
+                <li>
+                  <div class="title">图书<i class="iconfont icon-xiangyoujiantou"></i></div>
+                  <!-- 图书列表 -->
+                  <div class="movie-list">
+                    <!-- 单个图书 -->
+                    <div class="movie-box">
+                      <!-- 图书图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie1.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie-blank.png" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie2.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>看过</p>
+                        <p>2289</p>
+                      </div>
+                    </div>
+                    <!-- 收缩按钮 -->
+                    <div class="btn">
+                      <i class="iconfont icon-zuoshuangjiantou"></i>
+                    </div>
+                  </div>
+
+                </li>
+                <!-- 音乐 -->
+                <li>
+                  <div class="title">音乐<i class="iconfont icon-xiangyoujiantou"></i></div>
+                  <!-- 图书列表 -->
+                  <div class="movie-list">
+                    <!-- 单个图书 -->
+                    <div class="movie-box">
+                      <!-- 图书图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie1.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie-blank.png" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>想看</p>
+                        <p>14</p>
+                      </div>
+                    </div>
+                    <!-- 单个电影 -->
+                    <div class="movie-box">
+                      <!-- 电影图片 -->
+                      <div class="movie-pic">
+                        <img src="./img/movie2.pic.jpg" alt="">
+                      </div>
+                      <!-- 状态 -->
+                      <div class="state">
+                        <p>看过</p>
+                        <p>2289</p>
+                      </div>
+                    </div>
+                    <!-- 收缩按钮 -->
+                    <div class="btn">
+                      <i class="iconfont icon-zuoshuangjiantou"></i>
+                    </div>
+
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+            <!-- 功能按键 -->
+            <div class="function">
+              <i class="iconfont icon-gongneng"></i>
+              <i class="iconfont icon-xiangxiajiantou"></i>
+            </div>
+          </div>
+
+          <!-- 我的小组 -->
+          <div class="group">
+            <!-- top -->
+            <div class="group-top">
+              <div class="group-title">
+                我的小组 <span>2</span><i class="iconfont icon-xiangyoujiantou"></i>
+              </div>
+            </div>
+            <!-- 内容 -->
+            <div class="group-content">
+              <div class="group-pic"><img src="./img/xiaozu.pic.jpg" alt=""></div>
+              <div class="group-txt">
+                <p>超级单体风暴</p>
+                <p>1195超级单体</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 动态 -->
+          <div class="blog">
+
+          </div>
+        </div>
+      </div>
+      <!-- 主页 stop -->
+
+    </main>
+
+    <!-- 尾部 footer -->
+    <footer>
+
+      <ul>
+        <li>
+          <i class="iconfont icon-shouye"></i>
+          <p>首页</p>
+        </li>
+        <li>
+          <i class="iconfont icon-a-iconhuaban2"></i>
+          <p>书影音</p>
+        </li>
+        <li>
+          <i class="iconfont icon-xiaozu"></i>
+          <p>小组</p>
+        </li>
+        <li>
+          <i class="iconfont icon-linlishiji"></i>
+          <p>市集</p>
+        </li>
+        <li>
+          <div class="me"><img src="./img/logo.jpg" alt=""></div>
+          <p>我</p>
+        </li>
+      </ul>
+      <div class="sending">
+        <i class="iconfont icon-gangbi"></i>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="./js/flexbox.js"></script>
+</body>
+
+</html>

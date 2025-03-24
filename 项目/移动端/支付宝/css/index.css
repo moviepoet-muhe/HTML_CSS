@@ -1,0 +1,284 @@
+/* 应用程序的容器 */
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头部 */
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.2rem;
+  background-color: #1884d6;
+}
+
+/* 左侧 */
+header .left {
+  flex: 1;
+  display: flex;
+  line-height: .7796rem;
+  margin-left: .3598rem;
+  height: .7796rem;
+  background-color: #fff;
+}
+
+/* 左侧图标 */
+header .left .iconfont {
+  font-size: .3298rem;
+  padding: 0 20px;
+  color: #adadad;
+}
+
+/* 输入框占比1 */
+header .left input {
+  flex: 1;
+}
+
+
+/* 输入框文字大小 */
+header input {
+  font-size: .2933rem;
+  color: #676767;
+}
+
+
+/* 右侧 */
+header .right {
+  display: flex;
+  justify-content: space-evenly;
+  height: .7796rem;
+  line-height: .7796rem;
+  width: 2.4438rem;
+  /* background-color: hotpink; */
+}
+
+/* 右侧图标 */
+header .right .iconfont {
+  font-size: .3598rem;
+  padding: 0 .2999rem;
+  color: #fff;
+  /* background-color: greenyellow; */
+}
+
+
+
+/* 导航 */
+nav {
+  width: 100%;
+  height: 1.7867rem;
+  background-color: #1884d6;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+nav ul li span {
+  font-size: .32rem;
+}
+
+nav ul li i {
+  font-size: .6667rem !important;
+}
+
+
+
+/* 内容 */
+main {
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+  background-color: #f7f7f7;
+}
+
+main .icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5.1733rem;
+  align-content: space-evenly;
+  border-bottom: 1px solid #f7f7f7;
+  background-color: #fff;
+}
+
+.icon-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  /* background-color: hotpink; */
+}
+
+.icon-list li i {
+  font-size: .6667rem !important;
+}
+
+.icon-list li span {
+  font-size: .2667rem;
+  color: #777;
+}
+
+
+
+.icon-list li:nth-child(2n) i {
+  color: #ee9b24;
+}
+
+.icon-list li:nth-child(2n-1) i {
+  color: #ed5945;
+}
+
+.icon-list li:first-child i {
+  color: #27ac92;
+}
+
+.icon-list li:last-child i {
+  color: #bdbdbd;
+}
+
+/* news */
+main .news {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .2rem;
+  width: 100%;
+  height: 1.6rem;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7ff;
+  background: #fff url(../img/bg2.png) no-repeat 30px 17px;
+}
+
+.news ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 150px;
+}
+
+.news li {
+  list-style: disc;
+  font-size: .32rem;
+}
+
+.news li time {
+  margin-left: .1333rem;
+  color: #bdbdbd;
+}
+
+.news i {
+  padding-right: 10px;
+}
+
+
+/* 切换区域 */
+main .tap {
+  margin-top: .2rem;
+  background: #fff url(../img/bg.png) no-repeat .2667rem;
+  height: 2.4rem;
+  background-size: 9.48rem 2.0267rem;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7ff;
+}
+
+
+/* 惠支付 */
+main .pay {
+  padding: .4rem;
+  margin-top: .2rem;
+  height: 3.3333rem;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7ff;
+  background-color: #fff;
+}
+
+.pay h3 {
+  font-size: .4rem;
+}
+
+.pay .container {
+  display: flex;
+  padding: 0 .2667rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .4rem;
+  height: 1.76rem;
+  border: 1px solid #f7f7f7;
+}
+
+.pay .container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 1.2667rem;
+}
+
+.container .left {
+  background: url(../img/l.png) no-repeat 3.0133rem;
+  background-size: 1.1733rem 1.1733rem;
+  border-right: 1px solid #f1f1f1;
+}
+
+.container .right {
+  padding-left: 10px;
+  background: url(../img/r.png) no-repeat right;
+  background-size: 1.1733rem 1.1733rem;
+}
+
+.pay .container h4 {
+  font-size: .32rem;
+}
+
+.pay .container p {
+  font-size: .2667rem;
+  color: #bdbdbd;
+}
+
+
+
+/* 尾部 */
+footer {
+  width: 100%;
+  height: 1.3333rem;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7ff;
+  background-color: #fff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer ul li i {
+  font-size: .6rem !important;
+}
+
+footer ul li span {
+  font-size: .2667rem;
+}
+
+footer ul li:first-child i {
+  color: #2c9af0;
+}

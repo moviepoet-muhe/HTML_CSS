@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        table 表格标记
+        + 作用
+          => 显示数据
+        + 组成
+          => table
+          => tr 行
+          => td 列（单元格）
+        + 行分组
+          => thead 表头
+          => tbody 表体
+          => tfoot 表尾
+        + 特性
+          => 独占一行，自上而下排列
+        + 表格属性
+          => border 边框
+          => width 宽度
+          => height 高度
+          => bordercolor 边框颜色
+          => bgcolor 背景颜色
+          => align="left | center | right"  水平对齐方式
+             -> 如果设置在table上面表示的是整个表格的水平对齐方式
+             -> 如果设置在tr和td上面表示是整行或者单元格内容的水平对齐方式
+          => valign="top | middle | bottom" 垂直对齐方式
+          => cellspacing 单元格和单元格之间的间隙
+          => cellpadding 单元格内容与边框之间的距离
+          => colspan 合并列，合并的是左右
+          => rowspan 合并行，合并的是上下
+          => rules="all | cols | rows" 组分割线
+    -->
+    <table border="1" width="500" height="200" bordercolor="orange" bgcolor="green">
+        <tr bgcolor="hotpink">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td bgcolor="gold">1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" align="center">
+        <tr align="center"  valign="top">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td align="center" valign="bottom">1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" cellspacing="20">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" cellspacing="0" cellpadding="20">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" rules="all">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" rules="cols">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1" width="500" height="200" rules="rows">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+</html>

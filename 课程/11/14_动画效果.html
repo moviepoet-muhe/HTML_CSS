@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            /* animation-name: wj;
+            animation-duration: 3s; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+            animation: wj 3s ease-in infinite alternate;
+        }
+        @keyframes wj {
+            from{
+                transform: translateX(0px) rotateZ(0deg);
+            }   
+            to{
+                transform: translateX(800px) rotateZ(360deg);
+            }
+        }
+        div:hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <!-- 实现车轮往前滚动的效果 -->
+    <div>王江</div>
+</body>
+</html>

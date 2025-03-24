@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font: 12px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #666;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 990px;
+}
+
+/* 网页头部 */
+header .wrapper {
+  height: 80px;
+  /* background-color: wheat; */
+}
+
+header .logo {
+  float: left;
+  margin-top: 10px;
+  width: 300px;
+  height: 60px;
+}
+
+header .logo a {
+  font-size: 0;
+}
+
+header .logo h1 {
+  float: left;
+}
+
+header .logo p {
+  float: right;
+  margin-left: 20px;
+  color: black;
+  font: normal 25px/3.75rem "Microsoft Yahei";
+}
+
+/* 调查问卷 */
+header .questionnaire {
+  margin-top: 50px;
+  height: 18px;
+  float: right;
+}
+
+header .questionnaire a {
+  background: url(./img/q-icon.png) no-repeat left;
+  padding-left: 25px;
+}
+
+/* 法律信息 */
+section {
+  height: 40px;
+  background-color: antiquewhite;
+}
+
+section p {
+  padding-left: 10px;
+  background: url(./img/xx.png) no-repeat 80px;
+  line-height: 40px;
+  text-align: center;
+}
+
+section p a {
+  font-size: 12px;
+}
+
+section p a:hover {
+  color: red;
+}
+
+/* banner区域 */
+.banner {
+  background-color: #dc2e13;
+}
+
+.banner .wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 475px;
+  background: url(./img/bb.jpg) no-repeat;
+}
+
+/* 表单区 */
+.banner form {
+  width: 328px;
+  height: 400px;
+  background-color: white;
+}
+
+/* 表单头部小提示 */
+.banner .tips {
+  height: 39px;
+  background: #fff8f0 url(./img/xx.png) no-repeat 10px;
+  line-height: 39px;
+  text-align: center;
+}
+
+/* 扫码登录 账户登录 文字 */
+.banner .login-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* 扫码登录 账户登录 两个按钮 */
+.banner .login-text .btn {
+  flex: 1;
+  height: 54px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-size: 18px;
+
+}
+
+
+
+
+/* 扫码登录 账户登录 中间分割线 */
+.banner .login-text .sep {
+  width: 1px;
+  height: 30px;
+  background-color: #bdbdbd;
+}
+
+.banner .login-text .scan-pic {
+  position: absolute;
+  top: 55px;
+  width: 328px;
+  height: 255px;
+  background-color: #999;
+  display: none;
+}
+
+
+.banner .login-text .btn:hover {
+  color: red;
+  font-weight: bold;
+}
+
+/* 输入框区域 */
+.banner .input-div {
+  height: 255px;
+  border-top: 1px solid #bdbdbd;
+  text-align: center;
+}
+
+/* 两个输入框 */
+.banner input {
+  margin-top: 20px;
+  padding-left: 40px;
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  outline: none;
+  border: 1px solid #bdbdbd;
+  font-size: 18px;
+
+}
+
+/* 输入框占位内容 */
+.banner input::placeholder {
+  font-size: 18px;
+}
+
+/* 用户输入框背景图 */
+.banner .username {
+  background: url(./img/useraccount.png) no-repeat left;
+}
+
+/* 密码输入框背景图 */
+.banner .password {
+  background: url(./img/password.png) no-repeat left;
+}
+
+/* 忘记密码 */
+.banner .forgot-password {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.banner .forgot-password:hover {
+  color: #e4393c;
+}
+
+/* 登录按钮 */
+.banner .login-btn {
+  margin-top: 20px;
+  width: 280px;
+  height: 33px;
+  border: none;
+  background-color: #e4393c;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 20px;
+}
+
+.banner .login-btn:hover {
+  font-weight: bold;
+}
+
+/* 表单底部快捷登录 */
+.banner .quick-login {
+  margin-top: 10px;
+}
+
+/* 左侧快捷登录 */
+.banner .quick-login .left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  float: left;
+}
+
+.banner .quick-login a {
+  padding-left: 20px;
+}
+
+.banner .quick-login .left a:first-child {
+  background: url(./img/QQ-icon.png) no-repeat left;
+}
+
+.banner .quick-login .left a:last-child {
+  background: url(./img/wechat-icon.png) no-repeat left;
+}
+
+/* 分隔符 */
+.banner .quick-login .left .sep {
+  margin: 0 10px;
+  width: 1px;
+  height: 15px;
+  background-color: gray;
+}
+
+/* 右侧立即注册 */
+.banner .quick-login .right {
+  margin-right: 10px;
+  float: right;
+}
+
+.banner .quick-login .right a {
+  background: url(./img/right-point-icon.png) no-repeat left;
+}
+
+/* 网页尾部 */
+footer .wrapper {
+  height: 100px;
+  /* background-color: wheat; */
+  overflow: hidden;
+  text-align: center;
+}
+
+footer .link {
+  width: 800px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+footer .link a:hover {
+  color: red;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .sep {
+  width: 1px;
+  height: 10px;
+  background-color: #bdbdbd;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/indext.css">
+</head>
+
+<body>
+    <!-- 网页头部header -->
+    <div class="header">
+        <a href="">
+            <!-- logo -->
+            <div class="logo"></div>
+        </a>
+
+        <!-- 头部右侧表单区域 -->
+        <form>
+            <!-- 
+                问题：
+                + input标记默认带了2px的边框
+                  => border: none;
+                + 横向排列的元素，如果换行了，元素和元素之间会存在默认的间隙 
+                  => float: left;
+                + 输入框当点击后，会自动显示一个蓝色的轮廓
+                  => outline: none; 取消蓝色的轮廓
+            -->
+            <!-- 头部右侧搜索框 -->
+            <input class="search" type="text" placeholder="SEARCH...">
+            <!-- 头部右侧按钮 -->
+            <input class="btn" type="button">
+        </form>
+    </div>
+
+    <!-- 导航栏nav -->
+    <div class="nav">
+        <!-- 导航栏版心列表ul -->
+        <ul>
+            <!-- 导航栏版心列表内容li -->
+            <li class="first-li"><a href="">集团介绍</a></li>
+            <li><a href="">产品中心</a></li>
+            <li><a href="">市场营销</a></li>
+            <li><a href="">技术研发</a></li>
+            <li><a href="">国际合作</a></li>
+            <li><a href="">投资者关系</a></li>
+            <li><a href="">新闻资讯</a></li>
+            <li><a href="">人力资源</a></li>
+        </ul>
+    </div>
+
+    <!-- banner区域 -->
+    <div class="banner">
+        <a href=""><img src="./img/banner.png" alt=""></a>
+    </div>
+
+    <!-- 新闻板块news-list -->
+    <div class="news-list">
+        <!-- 左侧新闻板块left -->
+        <div class="left">
+            <h3><a href="">公司新闻</a></h3>
+            <ul>
+                <li><a href="">陈建成董事长出席ATB集团召开年度销售大会</a><span>2024-11-15</span></li>
+                <li><a href="">中国电器工业协会分马力电机分会在卧龙召开理事长...</a><span>2024-11-15</span></li>
+                <li><a href="">陈建成董事长访问中国驻德大使馆</a><span>2024-11-15</span></li>
+                <li><a href="">企业文化是企业特续经营的关键要素</a><span>2024-11-15</span></li>
+                <li><a href="">陈建成监事长在ATB集团2013年销售会议上发表重要..</a><span>2024-11-15</span></li>
+                <li><a href="">喜迎七- 唱响唱响年轻力量激发企业持久活力唱响举...</a><span>2024-11-15</span></li>
+            </ul>
+        </div>
+        <!-- 中间介绍板块center -->
+        <div class="center">
+            <h3><a href="">公司介绍</a></h3>
+            <p class="p1">公司成立于1984年，<br /><span>经过近30年的发展</span></p>
+            <p class="p2">已成为电气制造，房地产开发和金融<br />投资三业并举的综合性跨国...</p>
+        </div>
+        <!-- 右侧人才招聘right -->
+        <div class="right">
+            <h3><a href="">人才招聘</a></h3>
+            <p>培养一流的人才,铸造- -流的工程<br />实现员工与企业的共同发展</p>
+            <button class="btn">more →</button>
+        </div>
+    </div>
+
+    <!-- 市场项目模块market -->
+    <div class="market">
+        <h3>市场项目</h3>
+        <!-- 四个产品dl -->
+        <dl>
+            <dt><img src="./img/product-01.png" alt=""></dt>
+            <dd><a href="#">交通轨道:由于主要采用电气牵引,而且轮轨摩擦阻力较小,与公共...</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="./img/product-02.png" alt=""></dt>
+            <dd><a href="#">交通轨道:由于主要采用电气牵引,而且轮轨摩擦阻力较小,与公共...</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="./img/product-03.png" alt=""></dt>
+            <dd><a href="#">交通轨道:由于主要采用电气牵引,而且轮轨摩擦阻力较小,与公共...</a></dd>
+        </dl>
+        <dl class="last-dl-nomargin">
+            <dt><img src="./img/product-04.png" alt=""></dt>
+            <dd><a href="#">交通轨道:由于主要采用电气牵引,而且轮轨摩擦阻力较小,与公共...</a></dd>
+        </dl>
+    </div>
+
+    <!-- 产品中心product -->
+    <div class="product">
+        <!-- 产品中心内容product-content -->
+        <div class="product-content">
+            <div class="left">
+                <h3>产品中心</h3>
+                <ul>
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">日用电机</a></li>
+                    <li><a href="#">特种电机</a></li>
+                    <li><a href="#">特种电机</a></li>
+                    <li><a href="#">特种电机</a></li>
+                </ul>
+                <ul class="center-ul-needmargin">
+                    <li><a href="#">工业驱动和自动化</a></li>
+                    <li><a href="#">高压变频和系统集成</a></li>
+                    <li><a href="#">特种电机</a></li>
+                    <li><a href="#">大功率电机</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">电池电源</a></li>
+                    <li><a href="#">输变电设备</a></li>
+                    <li><a href="#">特种电机</a></li>
+                    <li><a href="#">大功率电机</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <h3>技术研发</h3>
+                <ul>
+                    <li><a href="#">科技力量</a></li>
+                    <li><a href="#">先进设备</a></li>
+                    <li><a href="#">研发创新</a></li>
+                    <li><a href="#">工艺流程</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>营销网络</h3>
+                <img src="./img/map.png">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 网页尾部模块 -->
+    <div class="foot">
+        <p class="left"><a href="">网站地图</a><span>|</span><a href="">联系我们</a><span>|</span><a
+                href="">关注关注</a><span>|</span><a href="">采购系统入口</a></p>
+        <p class="right">
+            <a href="">京ICP证030173号</a><a href="">互联网新闻信息服务许可证：11220180008</a><span>分享到:</span>
+            <a title="分享到新浪微博" href=""><img src="./img/icon-01.png" alt=""></a>
+            <a title="分享到腾讯微博" href=""><img src="./img/icon-02.png" alt=""></a>
+            <a title="分享到QQ空间" href=""><img src="./img/icon-03.png" alt=""></a>
+            <a title="分享到人人网" href=""><img src="./img/icon-04.png" alt=""></a>
+            <a title="分享到微信" href=""><img src="./img/icon-05.png" alt=""></a>
+        </p>
+    </div>
+
+</body>
+
+</html>

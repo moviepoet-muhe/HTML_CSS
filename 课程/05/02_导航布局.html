@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav1{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        .nav1 li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            width: 99px;
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        .nav1 li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav2{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        .nav2 li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            border-right: 1px solid red;
+            /* margin: 0 20px; */
+            padding: 0 20px;
+        }
+        .nav2 li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        nav{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        nav ul{
+            height: 16px;
+            margin-top: 11px;
+        }
+        nav ul li{
+            list-style: none;
+            float: left;
+            line-height: 16px;
+            font-size: 14px;
+            padding: 0 20px;
+            text-align: center;
+            border-right: 1px solid red;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav3{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        .nav3 li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .nav3 span{
+            float: left;
+            margin-top: 10px;
+            color: red;
+        }
+        .nav3 li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav4{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        .nav4 li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .nav4 span{
+            float: left;
+            margin-top: 16px;
+            background-color: red;
+            height: 10px;
+            width: 1px;
+        }
+        .nav4 li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用 width 宽度来布局导航的区域 -->
+    <ul class="nav1">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">购物商城</a></li>
+        <li><a href="#">购物车</a></li>
+        <li><a href="#">商品列表</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">时装</a></li>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+    <!-- 使用 padding 来布局导航的区域 -->
+    <ul class="nav2">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">购物商城</a></li>
+        <li><a href="#">购物车</a></li>
+        <li><a href="#">商品列表</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">时装</a></li>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">购物商城</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">商品列表</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">时装</a></li>
+            <li><a href="#">鞋子</a></li>
+        </ul>
+    </nav>
+
+    <ul class="nav3">
+        <li><a href="#">首页</a></li><span>/</span>
+        <li><a href="#">购物商城</a></li><span>/</span>
+        <li><a href="#">购物车</a></li><span>/</span>
+        <li><a href="#">商品列表</a></li><span>/</span>
+        <li><a href="#">联系我们</a></li><span>/</span>
+        <li><a href="#">游戏</a></li><span>/</span>
+        <li><a href="#">时装</a></li><span>/</span>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+
+    <ul class="nav4">
+        <li><a href="#">首页</a></li><span></span>
+        <li><a href="#">购物商城</a></li><span></span>
+        <li><a href="#">购物车</a></li><span></span>
+        <li><a href="#">商品列表</a></li><span></span>
+        <li><a href="#">联系我们</a></li><span></span>
+        <li><a href="#">游戏</a></li><span></span>
+        <li><a href="#">时装</a></li><span></span>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+</body>
+</html>

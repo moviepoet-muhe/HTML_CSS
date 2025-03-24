@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 1px solid;
+            margin: 50px auto;
+            background: url("./img/charector.png") no-repeat;
+            /* step-start 表示当前面执行完毕后，立马执行下一张，是一个连续的效果 */
+            animation: wj 1s infinite step-start;
+        }
+        @keyframes wj {
+            0%{
+                background-position-x: 0px;
+            }
+            14.28%{
+                background-position-x: -180px;
+            }
+            28.56%{
+                background-position-x: -360px;
+            }
+            42.85%{
+                background-position-x: -540px;
+            }
+            57.13%{
+                background-position-x: -720px;
+            }
+            71.4%{
+                background-position-x: -900px;
+            }
+            85.68%{
+                background-position-x: -1080px;
+            }
+            100%{
+                background-position-x: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

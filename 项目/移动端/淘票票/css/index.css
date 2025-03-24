@@ -1,0 +1,525 @@
+@media all and (min-width:750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* 应用程序的容器 */
+#app {
+  margin: 0 auto;
+  width: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头部 */
+.header {
+  padding: 0 .32rem;
+  width: 100%;
+  height: .96rem;
+  background-color: #fff;
+}
+
+.header .city-c {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+.header .city-c .icon-taopiaopiao {
+  font-size: .64rem !important;
+}
+
+.header .city-c span {
+  font-weight: 500;
+  font-size: .5333rem;
+  margin: 0 .08rem;
+}
+
+
+/* 内容区域 */
+
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+.home-content {
+  flex: 1;
+  padding: 12px 12px 0;
+  /* overflow: auto; */
+  background-color: #f5f6f8;
+}
+
+
+/* banner */
+.home-content .banner {
+  height: 2.1333rem;
+  border-radius: .16rem;
+  margin-bottom: .24rem;
+}
+
+.banner ul {
+  display: flex;
+}
+
+.banner ul li img {
+  border-radius: .16rem;
+}
+
+/* 导航 */
+nav {
+  margin-bottom: .24rem;
+  height: 2.24rem;
+  border-radius: .16rem;
+  background-color: #fff;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul li span {
+  font-size: .32rem;
+}
+
+nav ul li img {
+  width: .96rem;
+  height: .96rem;
+}
+
+/* 福利中心 */
+.benefit {
+  margin-bottom: .24rem;
+  height: 2.9067rem;
+  border-radius: .16rem;
+  background-color: #fff;
+}
+
+/* 头 公共样式 */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .2667rem .32rem;
+  /* height: 1.0667rem; */
+}
+
+/* 标题  公共样式*/
+.module-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.title-with-icon img {
+  height: .4rem;
+  width: .5067rem;
+  margin-right: .08rem;
+}
+
+/* 标题文字 公共样式 */
+.module-title-txt {
+  font-size: .3733rem;
+  font-weight: 500;
+}
+
+/* 福利中心内容 */
+.benefit-card-container {
+  padding: 0 .32rem .32rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 两张卡片 */
+.benefit-card-container .card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .2667rem 0 .32rem;
+  width: 50%;
+  height: 1.52rem;
+  border-radius: .16rem;
+  background-color: gold;
+}
+
+/* 左侧卡片 */
+.benefit-card-container .card-left {
+  background: #ffebee;
+}
+
+/* 右侧卡片 */
+.benefit-card-container .card-right {
+  background: #ffefd2;
+}
+
+/* 左边卡片 */
+.benefit-card-container .card-left {
+  margin-right: .24rem;
+}
+
+/* 卡片里左侧 item */
+.card-item-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*  item 标题 */
+.card-item-left .card-item-title {
+  margin-bottom: .1333rem;
+  font-size: .3733rem;
+  font-weight: 600;
+}
+
+/* item 副标题 */
+.card-item-left .card-item-subtitle {
+  font-size: .2933rem;
+  color: #959aa5;
+}
+
+
+/* 卡片右侧 item */
+
+/* item 价格 */
+.card-item-right .card-item-price {
+  display: flex;
+  align-items: baseline;
+  color: #ff3d5c;
+  font-size: .2933rem;
+}
+
+.card-item-price .price-low,
+.card-item-price .price-high {
+  font-size: .5067rem;
+  font-weight: 700;
+}
+
+/* 卡片右侧 item */
+.card-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* item 按钮 */
+.module-btn {
+  margin-top: .0667rem;
+  margin-bottom: .1333rem;
+  font-size: .2933rem;
+  font-weight: 500;
+  height: .56rem;
+  width: 1.44rem;
+  color: #fff;
+  border: 0;
+  border-radius: .2667rem;
+  line-height: .56rem;
+  position: relative;
+  background-image: linear-gradient(90deg, #ef16b9 0,
+      #ff335c 100%);
+}
+
+
+
+
+/* 右边卡片 */
+
+.card-item-right-position {
+  position: relative;
+}
+
+.card-item-right .card-item-icon {
+  height: 1.0667rem;
+  left: 50%;
+  position: absolute;
+  top: 0rem;
+  transform: translateX(-50%);
+  width: 1.0667rem;
+}
+
+/* 右边按钮渐变 */
+.card-item-right .card-right-btn {
+  background-image: linear-gradient(90deg, #ffad33 0,
+      #ff8533 100%);
+}
+
+/* 热映影片 心热预告 */
+.movie-list {
+  border-radius: .24rem;
+  background-color: #fff;
+  margin-bottom: .1333rem;
+}
+
+/* tap1 公共样式 */
+.tap-txt-1 {
+  margin-right: .48rem;
+}
+
+/* tap2 公共样式 */
+.tap-txt-2 {
+  color: #959aa5;
+}
+
+/* 查看全部 公共样式 */
+.module-header .more {
+  color: #959aa5;
+}
+
+.module-header .more i {
+  margin-left: .0533rem;
+}
+
+
+
+/* 滚动窗口 */
+.movie-list-content-scroll {
+  display: flex;
+  overflow-x: auto;
+}
+
+/* 电影列表内容 */
+.movie-list-content {
+  padding-bottom: .32rem;
+}
+
+/* 电影列表 */
+.movie-list-content ul {
+  display: flex;
+}
+
+/* 单个电影 li */
+.movie-list-content li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: .16rem;
+  /* padding-bottom: 1px; */
+  /* position: relative; */
+  width: 2.0533rem;
+  position: relative;
+}
+
+.movie-list-content li:first-child {
+  margin-left: .32rem;
+}
+
+
+/* 电影与标题容器 */
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 电影卡片 */
+.movie-container .movie-show-card {
+  position: relative;
+  border-radius: .16rem;
+}
+
+
+/* 电影卡片左上角标签 */
+.movie-container .movie-show-card .tag-list {
+  display: flex;
+  left: 3px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  z-index: 99;
+}
+
+/* 标签项目 */
+.tag-list .tag-always-show .tag-item {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* font-size: 0; */
+}
+
+/*  */
+.tag-list .tag-always-show .tag-item .tag {
+  margin: 0 .0533rem .0533rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+  font-size: .2667rem;
+  font-weight: 500;
+  padding: 0 .0533rem;
+  color: #fff;
+}
+
+/* 会员标签 */
+.tag-list .tag-always-show .tag-item .tag-primary {
+  background-color: #ff335c;
+  border-radius: .1067rem;
+}
+
+/* 评分人数 */
+.score-wrap {
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(180deg, transparent, #000);
+  color: #fff;
+  height: 1.2267rem;
+  padding-bottom: .1333rem;
+  padding-left: .16rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.score-wrap .score-text-wrap {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.score-wrap .score-text-wrap .score {
+  font-size: .2933rem;
+  font-weight: 500;
+  line-height: .3733rem;
+  white-space: nowrap;
+}
+
+.score-wrap .score-text-wrap .score-name {
+  font-size: .2933rem;
+  line-height: .3733rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* 电影海报 */
+.movie-container .movie-show-card .poster {
+  /* background-position: 50%; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: .16rem;
+  /* display: block; */
+  height: 2.7467rem;
+  width: 2.0533rem;
+  overflow: hidden;
+}
+
+/* 电影标题 */
+.movie-container .movie-title {
+  font-size: .32rem;
+  font-weight: 500;
+  line-height: .32rem;
+  margin-top: .2933rem;
+  color: #2e333e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 2.0533rem;
+}
+
+
+
+
+
+
+/* 购票按钮 */
+.movie-list-content .buy-btn-box {
+  margin-top: .32rem;
+  background-color: skyblue;
+  /* height: .64rem; */
+
+}
+
+.buy-btn {
+  height: .64rem;
+  line-height: .64rem;
+  margin-bottom: 0;
+  margin-top: .32rem;
+  z-index: 1;
+}
+
+.info-bg {
+  background-color: #ffecef;
+  background-size: cover;
+  bottom: .2667rem;
+  height: .4rem;
+  position: absolute;
+  width: .4rem;
+}
+
+.info {
+  background-color: #ffecef;
+  border-radius: .5333rem;
+  color: #ff3d5c;
+  font-size: .24rem;
+  height: .4rem;
+  line-height: .4rem;
+  max-width: 1.44rem;
+  padding: 0 .16rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+
+
+
+/* 网页尾部 */
+.footer {
+  padding-top: .1867rem;
+  /* height: 1.3067rem; */
+  background-color: #fff;
+  border-top: .0267rem solid #e9ebef;
+  padding-bottom: .1867rem;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul li {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer ul li i {
+  font-size: .64rem !important;
+}
+
+.footer ul li span {
+  font-size: .32rem;
+}
+
+.footer ul li:first-child span,
+.footer ul li:first-child i {
+  color: #ff4d64;
+}

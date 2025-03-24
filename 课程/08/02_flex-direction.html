@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+        }
+
+        .container1{
+            display: flex;
+            flex-direction: row;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .container3{
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container4{
+            height: 700px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h3>1)伸缩流方向 flex-direction 主要用来创建主轴，定义伸缩项目在伸缩容器中的方向</h3>
+    <p>row：从左向右 默认值</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>row-reverse：与row相反。和 float: right; 效果是一样的</p>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>column：从上到下</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>column-reverse：与column相反</p>
+    <div class="base container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 100%;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base .left{
+            width: 200px;
+            background-color: skyblue;
+        }
+        .base .center{
+            background-color: gold;
+            flex: 1;
+        }
+        .base .right{
+            width: 300px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h3>三列布局：容器里面有三个项目，两边的项目宽度是固定的，中间内容区域是自适应</h3>
+    <div class="base container1">
+        <div class="left">1</div>
+        <div class="center">三列布局：容器里面有三个项目，两边的项目宽度是固定的，中间内容区域是自适应</div>
+        <div class="right">3</div>
+    </div>
+</body>
+</html>

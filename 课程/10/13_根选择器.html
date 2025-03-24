@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* root 根选择器里面可以定义变量 */
+        :root{
+            --wj-orange--: hotpink;
+        }
+        h1{
+            /* var 函数 可以使用定义在根选择器里面的变量 */
+            color: var(--wj-orange--);
+        }
+        p{
+            color: var(--wj-orange--);
+        }
+        div{
+            color: var(--wj-orange--);
+        }
+
+        /* main{
+            span{
+                color: red;
+            }
+        } */
+        
+        /* main section span{
+            color: red;
+        } */
+
+        /* 选择器嵌套写法，这种语法之前浏览器是直接不支持的，只有 css预处理语言 less sass 支持 */
+        main{
+            section{
+                span{
+                    color: red;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>哈哈</h1>
+    <p>王江喜欢黑色</p>
+    <div>你好啊</div>
+
+    <main>
+        <section>
+            <span>你好啊</span>
+        </section>
+    </main>
+</body>
+</html>

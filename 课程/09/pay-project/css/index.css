@@ -1,0 +1,172 @@
+/* 应用程序的容器 */
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 1.24rem;
+    background-color: #1884ce;
+    padding: 0 .27rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header form{
+    width: 7.47rem;
+    height: .73rem;
+    background-color: #fff;
+    border-radius: .07rem;
+    padding-left: .24rem;
+    padding-right: .28rem;
+    display: flex;
+    align-items: center;
+}
+header form i{
+    font-size: .4rem !important;
+    color: #adadad;
+}
+header form input{
+    margin-left: .13rem;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: .32rem;
+    color: #676767;
+}
+header section{
+    width: 1.47rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header section i{
+    font-size: .53rem !important;
+    color: #fff;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    height: 1.76rem;
+    background-color: #1884ce;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li i{
+    font-size: .71rem !important;
+    color: #fff;
+}
+nav ul li span{
+    font-size: .32rem;
+    color: #fff;
+    margin-top: .13rem;
+}
+nav ul li:nth-child(3) i{
+    width: .75rem;
+    height: .75rem;
+    background: url("../img/sq.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/* main */
+main{
+    background-color: #f7f7f7;
+    flex: 1;
+    /* 当内容超出的时候出现滚动条 */
+    overflow: auto;
+}
+main .list{
+    height: 5.13rem;
+    background-color: #fff;
+}
+main .list ul{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+main .list ul li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .list ul li i{
+    font-size: .67rem !important;
+}
+main .list ul li span{
+    font-size: .32rem;
+    margin-top: .13rem;
+}
+main .list ul li:nth-child(1) i, 
+main .list ul li:nth-child(7) i,
+main .list ul li:nth-child(10) i{
+    color: #1a8ce0;
+}
+main .list ul li:nth-child(2) i,
+main .list ul li:nth-child(3) i,  
+main .list ul li:nth-child(6) i,
+main .list ul li:nth-child(8) i{
+    color: #ed9a33;
+}  
+main .list ul li:nth-child(4) i,
+main .list ul li:nth-child(5) i{
+    color: #ed5945;
+}
+main .list ul li:nth-child(9) i{
+    color: #27ac92;
+}
+main .list ul li:nth-child(11) i{
+    color: #bdbdbd;
+}
+main section{
+    height: 1.6rem;
+    background: #fff url("../img/bg2.png") no-repeat .4rem .27rem;
+    margin: .2rem 0;
+    background-size: 1.23rem 1rem;
+    font-size: .32rem;
+    padding-top: .13rem;
+}
+main section ul{
+    margin-left: 1.87rem;
+    background: url("../img/gt.png") no-repeat 7.53rem;
+    background-size: .29rem .4rem;
+    padding-right: .4rem;
+}
+main section ul li{
+    line-height: .67rem;
+}
+main section ul li a{
+    color: #424242;
+}
+main section ul li time{
+    color: #989899;
+    margin-left: .37rem;
+}
+main .tab{
+    height: 2.4rem;
+    background: #fff url("../img/bg.png") no-repeat .4rem;
+    background-size: 9.47rem 2rem;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 1.33rem;
+    background-color: #fff7ff;
+}

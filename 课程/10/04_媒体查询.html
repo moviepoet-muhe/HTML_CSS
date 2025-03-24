@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100%;
+            height: 100px;
+            background-color: gold;
+        }
+
+        /* @media only screen and () {} */
+
+        @media all and (min-width: 750px) {
+            div {
+                height: 200px;
+                background-color: hotpink;
+                font-size: 20px;
+            }
+        }
+
+        @media not all and (max-width: 750px) {
+            div {
+                height: 200px;
+                background-color: hotpink;
+                font-size: 20px;
+            }
+        }
+
+        /* 区间或者范围 */
+        @media all and (min-width: 375px) and (max-width: 1080px) {
+            div {
+                height: 200px;
+                background-color: hotpink;
+                font-size: 20px;
+            }
+        }
+
+        /* 竖屏 */
+        @media screen and (orientation:portrait) {
+            div {
+                height: 300px;
+                background-color: hotpink;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        /* 横屏 */
+        @media screen and (orientation:landscape) {
+            div {
+                height: 200px;
+                background-color: gold;
+                font-size: 20px;
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        media 媒体查询
+        + 可以让咱们根据不同设备的尺寸（宽度），来给其设置不同的样式
+        + screen 设备类型中的一种类型
+          => 表示的是电脑、手机、平板设备等等
+        + only 表示限定为某种设备
+        + and 表示和，表示设备尺寸的范围限定为是多少到多少
+        + not 表示排除某种设备
+        + (min-width: 750px) 称之为表达式
+        + 注意点
+          => 表达式后面不能加分号
+    -->
+    <div>可以让咱们根据不同设备的尺寸（宽度），来给其设置不同的样式</div>
+</body>
+
+</html>

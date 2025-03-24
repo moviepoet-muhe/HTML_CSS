@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .father{
+            width: 1000px;
+            border: 1px solid orange;
+            /* overflow: hidden; */
+        }
+        /* 万能清除法 */
+        .father::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

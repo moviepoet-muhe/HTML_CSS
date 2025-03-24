@@ -1,0 +1,268 @@
+@media all and (min-width:750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* 应用程序的容器 */
+#app {
+  margin: 0 auto;
+  width: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头部 */
+.header {
+  padding: 0 .3733rem;
+  width: 100%;
+  height: 1.0667rem;
+  /* background-color: skyblue; */
+  display: flex;
+  align-items: center;
+}
+
+.header .city {
+  font-size: .3733rem;
+}
+
+.header .city .iconfont {
+  font-size: .3733rem;
+  margin-right: .1333rem;
+  color: red;
+}
+
+.header .search-box {
+  margin-left: .2667rem;
+  width: 6.6667rem;
+  height: .7467rem;
+  background-color: #f1f4f6;
+  border-radius: .1333rem;
+  border: .0267rem solid #f3f6f6;
+}
+
+.header .search-box {
+  display: flex;
+}
+
+.header .search-box .btn {
+  width: 1.8667rem;
+  height: 100%;
+  border: 0;
+  text-align: right;
+}
+
+.header .search-box .btn .iconfont {
+  font-size: .3733rem;
+  color: #babdbf;
+}
+
+.header .search-box input {
+  height: 100%;
+  background-color: #f1f4f6;
+  font-size: .3733rem;
+  color: #babdbf;
+  padding-left: .2667rem;
+}
+
+.header .mail {
+  padding-left: .4rem;
+}
+
+.header .mail .iconfont {
+  font-size: .5333rem;
+  color: red;
+}
+
+/* 内容区域 */
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+/* banner */
+.banner {
+  height: 3.7333rem;
+}
+
+.banner ul,
+.banner ul li {
+  height: 100%;
+}
+
+/* 导航卡 */
+nav {
+  height: 3.7333rem;
+  width: 100%;
+  height: 4.2667rem;
+  padding: .4rem;
+  /* border-bottom: .0267rem solid; */
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+nav ul li {
+  height: 1.3333rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li p {
+  font-size: .3733rem;
+}
+
+nav ul li .iconfont {
+  font-size: .5333rem;
+}
+
+
+/* 全球旅拍 */
+
+.photo {
+  padding: .2667rem 0;
+
+}
+
+.photo .title {
+  padding: 0 .5333rem .2667rem;
+  border-left: .1333rem solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo .title h2 {
+  font-size: .5333rem;
+  font-weight: 900;
+}
+
+.photo .title div {
+  font-size: .4267rem;
+  color: #9b9b9b;
+}
+
+.photo .title div span {
+  margin-left: .1333rem;
+}
+
+/* 内容图片 */
+.photo .pic {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .5333rem;
+}
+
+.photo .pic div {
+  width: 30%;
+  height: 2.6667rem;
+  /* background-color: skyblue; */
+  border-radius: .1333rem;
+}
+
+.photo .pic div:nth-child(1) {
+  background: url(../img/1735890872241.jpg) no-repeat center/cover;
+}
+
+.photo .pic div:nth-child(2) {
+  background: url(../img/1735890902381.jpg) no-repeat center/cover;
+}
+
+.photo .pic div:nth-child(3) {
+  background: url(../img/1735890912989.jpg) no-repeat center/cover;
+}
+
+
+/* 地址 */
+.photo .add {
+  margin-top: .1333rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .5333rem;
+}
+
+.photo .add div {
+  height: .96rem;
+  background-color: greenyellow;
+  border-radius: .1067rem;
+  width: 23%;
+  text-align: center;
+  line-height: .96rem;
+  font-size: .3733rem;
+}
+
+.photo .add div:first-child {
+  background-color: #f2f7dc;
+}
+
+.photo .add div:nth-child(2) {
+  background-color: #e9fdef;
+}
+
+.photo .add div:nth-child(3) {
+  background-color: #faf2e2;
+}
+
+.photo .add div:nth-child(4) {
+  background-color: #e3f9f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 尾部 */
+footer {
+  border-top: .0267rem solid #9b9b9b;
+  height: 1.3333rem;
+  width: 100%;
+  /* background-color: gold; */
+}
+
+footer ul {
+  height: 100%;
+  display: flex;
+}
+
+footer ul li {
+  width: 20%;
+  height: 100%;
+  color: #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer ul li:first-child {
+  color: #dd363b;
+}
+
+footer ul li .iconfont {
+  font-size: .5333rem;
+  color: #9b9b9b;
+}
+
+footer ul li:first-child .iconfont {
+  color: #dd363b;
+}
+
+footer ul li p {
+  font-size: .32rem;
+}

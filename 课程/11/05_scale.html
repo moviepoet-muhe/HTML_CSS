@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 100px auto;
+            /* transform: scaleX(2) scaleY(1.2); */
+            transform: scale(.5);
+        }
+    </style>
+</head>
+<body>
+    <!--
+        2D属性
+        + 平面空间，二维空间
+        + 变形属性
+          => transform
+          => 可以允许元素进行位移、缩放、旋转
+        translate
+        + 位移（就是元素的位置进行移动，会根据坐标轴（x、y、z）进行移动）
+        + translateX()
+        + translateY()
+        + translateZ()
+        + 缩写（复合写法）
+          => translate(值1, 值2) 
+          => 值1表示水平 值2表示垂直
+        scale
+        + 缩放（放大或者缩小）
+        + scaleX()
+        + scaleY()
+        + scaleZ()
+        + 缩写（复合写法）
+          => scale()
+        + 属性值
+          => 大于 1 表示放大，小于 1 表示缩小
+          => 缩写形式如果是两个值的话，那么值 1 表示水平位置缩放，值 2 表示 垂直位置缩放
+
+        注意点
+        + 两个 transform 之间会进行 覆盖
+        + scale 值不能为 0，如果为 0 宽度和高度缩放没有了
+    -->
+    <div></div>
+</body>
+</html>

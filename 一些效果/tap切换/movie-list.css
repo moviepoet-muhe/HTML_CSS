@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(194, 183, 188);
+}
+
+/* 内容区域content-body */
+.content-body {
+    width: 278px;
+    height: 506px;
+    margin-left: 500px;
+    margin-top: 300px;
+    border: 1px solid #dfe3e6;
+}
+/* 热点tap标题 hotlist-tap */
+.content-body .hotlist-tap {
+    height: 44px;
+    width: 278px;
+    background-color: #ffffff;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: center;
+}
+/* 热点tap标题 hotlist-tap下的4个a */
+.content-body .hotlist-tap a {
+    color: black;
+    margin-right: 19px;
+    position: relative;
+    /* background-color: red; */
+}
+
+/* 使用伪类为第1个a创建一个上划线，通过绝对定位来调整横线位置 */
+.content-body .hotlist-tap a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: -12px;
+    background-color: #53a076;
+}
+
+/* 第1个a的颜色、字体 */
+.content-body .hotlist-tap a:nth-child(1) {
+    color: #53a076;
+    margin-right: 22px;
+    font-weight: bolder;
+}
+
+
+
+/* 热点top1区域 */
+.content-body .top1 {
+    width: 278px;
+    height: 106px;
+    background-color: #fafbfd;
+}
+
+/* 热点top1区域图片a */
+.content-body .top1 a{
+    float: left;
+    display: block;
+    height: 80px;
+    margin-left: 19px;
+}
+/* 热点top1区域文字列表ul浮动 */
+.content-body .top1 ul {
+    float: left;
+}
+/* 热点top1区域文字列表ul下的li */
+.content-body .top1 li {
+    line-height: 22px;
+    margin-left: 12px;
+    font-size: 13px;
+    color: #9b9b9b;
+}
+/* 热点top1区域文字列表ul下的第1个li */
+.content-body .top1 li:nth-child(1) {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black;
+}
+
+/*热点top2-10区域的ul*/
+.top2-10{
+    height: 312px;
+    width: 278px;
+    line-height: 33px;
+    background-color: #ffffff;
+    float: left;
+}
+
+/*第1个li上方距离*/
+.top2-10 li:nth-child(1){
+    margin-top: 17px;
+}
+
+/*li里的序号span .num左侧距离*/
+.top2-10 li .num{
+    margin-left: 22px;
+}
+
+/*li里的电影名字span .name左侧距离*/
+.top2-10 li .name{
+    margin-left: 14px;
+}
+
+/*li里的最后1个电影名字span .last-name左侧距离*/
+.top2-10 li .last-name{
+    margin-left: 9px;
+}
+/*li里的第3个span热度数字.hot-num右浮动与右边距*/
+.top2-10 li .hot-num{
+    float: right;
+    margin-right: 35px;
+}
+
+/*第1个li里面的第1个序号span字体颜色*/
+.top2-10 li:nth-child(1) span:nth-child(1){
+    color: #d96d3f;
+}
+
+/*第2个li里面的第1个序号span字体颜色*/
+.top2-10 li:nth-child(2) span:nth-child(1){
+    color: #e6b046;
+}
+
+/*li里面的序号span .hot-num颜色*/
+.top2-10 li .hot-num{
+    color: #bdbdbd;
+}
+
+/*热点top2-10区域的li设置相对浮动*/
+.top2-10 li{
+    position: relative;
+}
+
+/*li里的右侧热度升降图标img绝对定位与右侧边距*/
+.top2-10 li img{
+    position:absolute;
+    right: 19px;
+    top: 50%;
+}
+
+/* 底部.refresh区域 */
+.refresh{
+    float: left;
+    height: 42px;
+    width: 278px;
+    background-color: #ffffff;
+    position: relative;
+    display: block;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    color: #626675;
+    cursor: pointer;
+}
+.refresh::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 74px;
+    top: 20px;
+    left: 30px;
+    background-color: #f5f5f6;
+}
+
+.refresh::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 74px;
+    top: 20px;
+    right: 12px;
+    background-color: #f5f5f6;
+}
+
+.refresh img{
+    margin-left: 4px;
+    position: absolute;
+    top: 15px;
+}
+
+.refresh:hover{
+    background-color: #ccc;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab{
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            position: relative;
+        }
+        .tab .btn{
+            width: 200px;
+            height: 30px;
+            background-color: orange;
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+        }
+        .content{
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .content div{
+            width: 500px;
+            height: 300px;
+        }
+        #wj{
+            background-color: gold;
+        }
+        #wx{
+            background-color: hotpink;
+        }
+        #dw{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="btn">
+            <a href="#wj">王江</a>
+            <a href="#wx">王旭</a>
+            <a href="#dw">邓为</a>
+        </div>
+        <div class="content">
+            <div id="wj">王江喜欢黑丝</div>
+            <div id="wx">王旭喜欢萝莉类型的女朋友</div>
+            <div id="dw">邓为喜欢学习，认真钻研技术</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 200px;
+            background-color: orange;
+            /* 注意点：当把容器转为弹性盒布局后，项目都可以设置宽度和高度，不会受之前元素类型的特性的影响 */
+            display: flex;
+        }
+        div span:nth-child(1){
+            width: 200px;
+            background-color: hotpink;
+        }
+        div span:nth-child(2){
+            width: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+    </div>
+</body>
+</html>

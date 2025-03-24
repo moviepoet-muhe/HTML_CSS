@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 300px;
+            border: 1px solid;
+            margin: 50px auto;
+            background: url("./img/2.jpg") no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+            transition: all 1s;
+        }
+        div p{
+            width: 100%;
+            height: 45px;
+            background-color: hotpink;
+            text-align: center;
+            line-height: 45px;
+            font-size: 14px;
+            position: absolute;
+            bottom: -45px;
+            transition: all 1s;
+        }
+        div:hover{
+            background: url("./img/3.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+        div:hover p{
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>王江喜欢的</p>
+    </div>
+</body>
+</html>

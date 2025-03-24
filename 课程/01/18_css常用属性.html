@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font-style 文字倾斜 */
+        .p1{
+            /* italic 指的是斜体字 */
+            font-style: italic;
+        }
+        .p2{
+            /* oblique 指的是向左倾斜的文字（常用） */
+            font-style: oblique;
+        }
+        .p3{
+            /* 
+                font-family 字体 
+                + 规则
+                  => 多个字体之间使用逗号隔开
+                  => 中文字体需要使用双引号包裹
+                  => 英文字体如果是单个单词的不需要使用引号，如果是多个单词组成的字体需要使用引号
+                  => 如果设置了多个字体的时候，浏览器会先找到第一个字体，如果支持就直接使用，如果不支持就去查找后面的字体，都不支持的情况下那么使用默认字体
+            */
+            font-family: "微软雅黑";
+        }
+        .p4{
+            font-family: "微软雅黑", "宋体";
+        }
+        .p5{
+            font-family: "黑体", "宋体", "微软雅黑";
+        }
+        .p6{
+            /* 
+                font-size 文字大小 
+                + 浏览器默认的字体大小是 16px，浏览器支持的最小字体大小是 12px（因为有些浏览器不是这样的）
+
+                px 像素（画素）
+                + 如果不是高清图片，把图片放大后，会发现图片上面有一个一个的小方格，那个方格其实就是一个一个的像素
+                + 像素是网页的基本组成单位
+            */
+            font-size: 16px;
+        }
+        .p7{
+            font-size: 12px;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">王江喜欢美女！</p>
+    <p class="p2">王江喜欢美女！</p>
+    <hr/>
+    <p class="p3">王江喜欢美女！</p>
+    <p class="p4">王江喜欢美女！</p>
+    <p class="p5">王江喜欢美女！</p>
+    <hr/>
+    <p class="p6">王江喜欢美女！</p>
+    <p class="p7">王江喜欢美女！</p>
+
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            perspective: 500px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            margin: 0 auto;
+            margin-top: 100px;
+            /* transform: translateZ(200px); */
+            /* transform: translate3d(100px, 50px, 200px); */
+            /* 值1表示x，值2表示y，值3表示z，值3表示度数。前面三个值如果为0那么表示不沿着该轴进行渲染，为表示旋转 */
+            /* transform: rotate3d(1, 0, 0, 45deg); */
+
+            /* 斜切，倾斜 */
+            /* transform: skewX(0deg); */
+            transform: skewY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

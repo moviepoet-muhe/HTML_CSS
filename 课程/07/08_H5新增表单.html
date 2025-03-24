@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- autocomplete 默认关闭输入框的历史记录提示功能 off 关闭 on 开 -->
+    <form autocomplete="off">
+        <!-- 上传文件 multiple 可以实现多选功能-->
+        <!-- <input type="file" multiple> -->
+
+        <!-- autofocus 默认打开网页会自动获取焦点，一般给第一个表单框使用 -->
+        <!-- 注意点：当表单设置了 name 属性和值后，默认会开启历史记录功能（之前输入过的内容，当获取焦点时会自动提示） -->
+        <!-- <input type="text" required autofocus name="username">
+        <input type="password" name="password"> -->
+
+        <!-- 邮箱地址 required 非空验证-->
+        <!-- <input type="email" multiple required> -->
+
+        <!-- 进度条 -->
+        <!-- <input type="range" value="10"> -->
+
+        <!-- 取色器 -->
+        <!-- <input type="color" > -->
+
+        <!-- 电话号码 -->
+        <!-- <input type="tel"> -->
+
+        <!-- 搜索 -->
+        <!-- <input type="search"> -->
+
+        <!-- 日历 -->
+        <!-- <input type="date" value="2025-01-01">
+        <input type="week">
+        <input type="month">
+        <input type="time"> -->
+
+        <!-- maxlength 最大字符长度  minlength 最小字符的长度 -->
+        <!-- <input type="text" maxlength="10" minlength="2"> -->
+
+        <!-- 数字 min 最小值  max 最大值 step 间隔 -->
+        <!-- <input type="number" min="10" step="10" max="100"> -->
+
+        <!-- 网站网址 -->
+        <input type="url">
+
+        <input type="submit">
+    </form>
+</body>
+</html>

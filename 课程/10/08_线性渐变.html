@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            float: left;
+            margin: 30px;
+        }
+        div:nth-child(1){
+            /* 如果不指定方向，那么默认是从上往下进行渐变 */
+            /* background: linear-gradient(red, yellow); */
+            /*
+                浏览器私有前缀
+                + 当一个属性还没有成为标准的时候，想要浏览器支持和测试使用它，那么浏览器提出了一种解决方案，叫做私有前缀
+                + 这个属性没有成为标准，在使用属性的时候给前面添加对应浏览器的私有前缀，那么浏览器就可以支持它
+                + 把私有前缀理解为一个临时的身份（id）
+                + 常见的私有前缀
+                  -o- 欧朋
+                  -ms- IE
+                  -moz- 火狐
+                  -webkit- 谷歌
+            */
+            background-image: linear-gradient(red, yellow);
+            /* 
+                background-image: -o-linear-gradient(red, yellow);
+                background-image: -ms-linear-gradient(red, yellow);
+                background-image: -moz-linear-gradient(red, yellow);
+                background-image: -webkit-linear-gradient(red, yellow); 
+            */
+        }
+        div:nth-child(2){
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        div:nth-child(3){
+            background-image: linear-gradient(to left, red, yellow);
+        }
+        div:nth-child(4){
+            background-image: linear-gradient(to top, red, yellow);
+        }
+        div:nth-child(5){
+            background-image: linear-gradient(to bottom, red, yellow);
+        }
+
+        div:nth-child(6){
+            background-image: linear-gradient(to right bottom, red, green);
+        }
+        div:nth-child(7){
+            background-image: linear-gradient(to left bottom, red, green);
+        }
+        div:nth-child(8){
+            background-image: linear-gradient(to right top, red, green);
+        }
+        div:nth-child(9){
+            background-image: linear-gradient(to left top, red, green);
+        }
+
+        div:nth-child(10){
+            /* deg 表示角度 */
+            background-image: linear-gradient(90deg, red, green);
+        }
+        div:nth-child(11){
+            width: 500px;
+            height: 50px;
+            background-image: linear-gradient(to right, hotpink 10%, green 20%);
+        }
+        div:nth-child(12){
+            width: 500px;
+            height: 50px;
+            background-image: linear-gradient(to right, hotpink 50%, green 50%);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

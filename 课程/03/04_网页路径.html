@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        网页路径
+        + 绝对路径
+          => 是固定的路径，是无法改变的 
+          => 带盘符的路径（c:\user\desktop\lesson\day01\img\1.jpg）、网络地址（https://img10.360buyimg.com/img/jfs/t1/243758/14/21012/14218/670a74a7Fcfdd9aa4/6a035c24557c5c02.png）
+        + 相对路径
+          => 相对于某个文件夹的路径，相对比较灵活
+        相对路径规则
+        + 当当前文件与目标文件在同一目录下时，./目标文件名.扩展名
+        + 当当前文件与目标文件的文件夹在同一目录下时，./目标文件夹名/目标文件名.扩展名
+        + 当当前文件的文件夹与目标文件的文件夹在同一目录下时，../目标文件夹名/目标文件名.扩展名
+        
+        当前文件
+        + 指的是就是咱们现在的这个网页文件
+        目标文件
+        + 就是咱们希望加载的那张图片
+        ./
+        + 表示的是当前目录（可以省略，但是不建议省略，因为如果在服务器环境下需要做一些对应的配置的话，那么可能会路径匹配不正确）
+        ../
+        + 表示的是返回上一级目录
+    -->
+    <img src="./25.jpg" width="200">
+    <img src="./img/29.jpg" width="200">
+</body>
+</html>

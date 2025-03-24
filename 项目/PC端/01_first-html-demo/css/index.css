@@ -1,0 +1,167 @@
+/* 重置样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    color: #585858;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #585858;
+}
+
+/* header */
+header{
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+header .logo{
+    width: 280px;
+    height: 32px;
+    margin-top: 35px;
+    float: left;
+}
+header form{
+    width: 225px;
+    height: 26px;
+    border: 1px solid #e5e5e5;
+    float: right;
+    margin-top: 39px;
+}
+/* 
+    搜索区域：
+    + 规定：search 盒子宽度是 195px，btn 盒子宽度是 30px 
+    + input 默认自带了 2px 边框
+    + input 在点击的时候会存在默认的轮廓（蓝色）
+    取消边框
+    + border: none;
+    取消轮廓
+    + outline: none;
+*/
+header form input{
+    border: none;
+    outline: none;
+    float: left;
+}
+header form .search{
+    width: calc(195px - 14px);
+    height: 26px;
+    /* 
+        border: none;
+        outline: none;
+        float: left;
+        background-color: #f1f1f1; 
+    */
+    font-size: 12px;
+    color: #878787;
+    padding-left: 14px;
+    background-color: #f1f1f1; 
+}
+header form .btn{
+    width: 30px;
+    height: 26px;
+    /* 
+        border: none;
+        outline: none;
+        float: left;
+        background-color: #f1f1f1; 
+    */
+    background: #f1f1f1 url("../img/search.png") no-repeat center;
+    /* 当鼠标移动到盒子上面的时候，会把光标变成手型 */
+    cursor: pointer;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    height: 59px;
+    background-color: #2f2f2f;
+}
+nav ul{
+    width: 960px;
+    height: 59px;
+    margin: 0 auto;
+}
+nav ul li{
+    width: 119px;
+    font-size: 14px;
+    float: left;
+    line-height: 59px;
+    border-right: 1px solid #4a4a4a;
+    text-align: center;
+}
+nav ul li a{
+    color: #fff;
+}
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 660px;
+    background: url("../img/mi.jpeg@base@tag=imgScale&F=webp&h=1180&q=90&w=2560") no-repeat center;
+    background-size: 100% 100%;
+}
+
+/* news */
+.news{
+    width: 960px;
+    height: 240px;
+    margin: 0 auto;
+}
+.news h3{
+    font-size: 17px;
+    margin-top: 35px;
+    margin-bottom: 22px;
+    font-weight: normal;
+}
+.news .left{
+    width: 480px;
+    height: 240px;
+    float: left;
+}
+.news .left ul{
+    padding-right: 27px;
+}
+.news .left ul li{
+    line-height: 24px;
+    padding-left: 14px;
+    background: url("../img/list.png") no-repeat left;
+}
+.news .left ul li span{
+    float: right;
+    color: #949494;
+}
+.news .center{
+    width: calc(240px - 20px);
+    height: 240px;
+    background-color: #f1f1f1;
+    float: left;
+    padding-left: 20px;
+}
+.news .center p{
+    line-height: 24px;
+}
+.news .center p span{
+    font-size: 14px;
+}
+.news .center .p2{
+    color: #949494;
+    margin-top: 18px;
+}
+.news .right{
+    width: calc(240px - 23px);
+    height: 240px;
+    background: #fbfbfb url("../img/recruit.png") no-repeat right bottom;
+    float: left;
+    padding-left: 23px;
+}
+.news .right p{
+    line-height: 24px;
+    margin-bottom: 25px;
+}

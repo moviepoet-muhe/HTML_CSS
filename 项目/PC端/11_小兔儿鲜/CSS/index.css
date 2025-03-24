@@ -1,0 +1,488 @@
+/* 首页内容的样式 */
+
+/* banner区域 */
+.banner {
+  height: 500px;
+  background: #F5F5F5;
+}
+
+.banner .wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  background-color: aqua;
+}
+
+.banner .pic {
+  display: flex;
+  /* 父级宽度不够，子级宽度被挤小了，增大父级宽度 */
+  width: 3720px;
+}
+
+/* 侧导航 */
+.subnav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .42);
+}
+
+.subnav li {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 12px;
+  height: 50px;
+  /* background-color: palevioletred; */
+  line-height: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.subnav li a {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.subnav li .classify {
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+.subnav li .iconfont {
+  font-size: 14px;
+}
+
+.subnav li:hover {
+  background: #00BE9A;
+}
+
+/* 圆点指示器 */
+.banner ol {
+  display: flex;
+  position: absolute;
+  right: 16px;
+  bottom: 17px;
+}
+
+.banner ol li {
+  margin: 0 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  /* background: rgba(255, 255, 255, 0.50); */
+  cursor: pointer;
+}
+
+.banner ol li i {
+  display: inline-block;
+  margin: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.50);
+}
+
+.banner ol li:hover {
+  background: rgba(255, 255, 255, 0.50);
+}
+
+.banner ol li:hover i {
+  background: rgb(255, 255, 255);
+}
+
+
+/* 新鲜好物 */
+/* 标题 -- 公共样式 */
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  height: 42px;
+  /* background-color: hotpink; */
+}
+
+.title .left {
+  display: flex;
+}
+
+.title .left h3 {
+  margin-right: 35px;
+  font-size: 30px;
+}
+
+.title .left p {
+  color: #A1A1A1;
+  align-self: flex-end;
+}
+
+.title .right .more {
+  line-height: 42px;
+  color: #A1A1A1;
+}
+
+.title .right .iconfont {
+  margin-left: 10px;
+  color: #A1A1A1;
+}
+
+/* 内容--- 公共样式 */
+.bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd li {
+  position: relative;
+  width: 304px;
+  height: 404px;
+  background-color: #EEF9F4;
+  transition: all .3s ease;
+}
+
+.bd li:hover {
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* 遮罩层 */
+.bd li::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent,
+      rgba(0, 0, 0, .2));
+  opacity: 0;
+}
+
+.bd li:hover::after {
+  opacity: 1;
+}
+
+.bd li:hover img {
+  transform: scale(1.1);
+}
+
+.bd li .pic img {
+  transition: all .3s ease;
+}
+
+.bd li .pic {
+  width: 304px;
+  height: 304px;
+  overflow: hidden;
+}
+
+.bd li .txt {
+  text-align: center;
+}
+
+.bd li .txt h4 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+/* -------------------------------新鲜好物 */
+.goods .bd p {
+  font-size: 18px;
+  color: #AA2113;
+}
+
+.goods .bd p span {
+  margin-left: 3px;
+  font-size: 22px;
+}
+
+/* -------------------------------人气推荐  */
+.recommend .bd li {
+  background-color: #fff;
+}
+
+.recommend .bd p {
+  color: #A1A1A1;
+}
+
+/* --------------------------------热门品牌 */
+.brand {
+  margin-top: 60px;
+  height: 468px;
+  background: #F5F5F5;
+}
+
+.brand .wrapper {
+  overflow: hidden;
+  height: 468px;
+  /* background: skyblue; */
+}
+
+/* 标题 */
+.brand .title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* 切换按钮 */
+.brand .button {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+
+.brand .button a {
+  text-align: center;
+  line-height: 20px;
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #ddd;
+}
+
+.brand .button .prev:hover {
+  background-color: #5EB69C;
+}
+
+.brand .button .next:hover {
+  background-color: #5EB69C;
+}
+
+.brand .button .active {
+  background-color: #5EB69C;
+}
+
+/* 内容 */
+.brand .bd li {
+  width: 244px;
+  height: 306px;
+}
+
+/* --------------------------------生鲜 */
+
+/* 标题 */
+.fresh .title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.title .right {
+  display: flex;
+  align-items: center;
+}
+
+.title .right ul {
+  display: flex;
+  margin-right: 58px;
+}
+
+.title .right ul a {
+  display: inline-block;
+  padding: 0 7px;
+  margin-right: 6px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.title .right ul a:hover {
+  color: #fff;
+  background-color: #00BE9A;
+}
+
+.title .right ul .active {
+  color: #fff;
+  background-color: #00BE9A;
+}
+
+/* 生鲜内容 公共样式 */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .left {
+  width: 248px;
+  height: 610px;
+  /* background-color: hotpink; */
+}
+
+.content .right {
+  width: 968px;
+  height: 610px;
+  /* background-color: skyblue; */
+}
+
+.content .right ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .right ul li {
+  position: relative;
+  padding: 10px 21px 0px;
+  width: 242px;
+  height: 305px;
+  border: 2px solid #fff;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+/* 产品内容 */
+.content .pic {
+  width: 200px;
+  height: 180px;
+}
+
+.content .info {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  height: 60px;
+  line-height: 19px;
+}
+
+.content .price {
+  color: #AF2F22;
+}
+
+.content .price span {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+/* 产品底部过渡区域 */
+.content li .cover {
+  position: absolute;
+  padding-top: 15px;
+  left: 0;
+  /* bottom: 0; */
+  bottom: -84px;
+  width: 242px;
+  height: 84px;
+  text-align: center;
+  background: #00BE9A;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.content .cover p:nth-child(1) {
+  font-size: 18px;
+}
+
+.content .cover p:nth-child(2) {
+  margin: 3px auto 6px;
+  width: 120px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.content .cover p:nth-child(3) {
+  font-size: 13px;
+}
+
+.content .cover p:nth-child(3) .iconfont {
+  font-size: 14px;
+}
+
+.content .right ul li:hover {
+  border: 2px solid #00BE9A;
+}
+
+.content .right ul li:hover .cover {
+  bottom: 0;
+}
+
+
+/* -------------------------------------最新专题 */
+.topic {
+  margin-bottom: 40px;
+}
+
+/* 标题 */
+.topic .title {
+  margin-top: 100px;
+}
+
+/* 内容 */
+.topic-bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-bd li {
+  width: 405px;
+  height: 355px;
+  transition: all .4s ease;
+  /* background-color: hotpink; */
+}
+
+.topic-bd li:hover {
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, .42);
+}
+
+.topic-bd li .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+}
+
+.topic-bd li .txt {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 405px;
+  height: 67px;
+  font-size: 14px;
+  color: #666;
+}
+
+.topic-bd .txt .left {
+  display: flex;
+}
+
+.topic-bd .txt .left p {
+  margin-right: 20px;
+}
+
+/* 定位 */
+.topic-bd .cover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 405px;
+  height: 90px;
+  background-image: linear-gradient(180deg, rgba(137, 137, 137, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%);
+}
+
+.topic-bd .cover .left {
+  color: #fff;
+}
+
+.topic-bd .cover .left h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.topic-bd .cover .right {
+  padding: 0 7px;
+  height: 25px;
+  background-color: #fff;
+  color: #AA2113;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.topic-bd .cover .right span {
+  font-size: 18px;
+}

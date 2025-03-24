@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通过标记的属性名来选取元素 */
+        /* input[type]{
+            border: 1px solid red;
+        } */
+
+        /* input[name]{
+            border: 1px solid red;
+        } */
+
+        /* 通过标记的属性的属性值来选取元素（推荐） */
+        input[type="text"]{
+            border: 1px solid red;
+        }
+        input[type="password"]{
+            border: 1px solid orange;
+        }
+
+        /* 通过标记的属性的属性值开头字符选取元素 */
+        a[href^="J"]{
+            color: red;
+        }
+        a[href$="m"]{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="" name="username">
+    <input type="password" value="" name="userpwd">
+    <input type="reset">
+    <input type="submit">
+    <input type="button" value="免费注册">
+
+    <a href="#">空链接</a>
+    <a href="JavaScript:;">空链接</a>
+    <a href="https://www.jd.com">jd</a>
+    <a href="JavaScript:;">空链接</a>
+    <a href="https://www.baidu.com">jd</a>
+</body>
+</html>

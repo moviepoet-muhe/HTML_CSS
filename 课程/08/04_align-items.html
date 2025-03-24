@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+        }
+
+        .container1{
+            align-items: flex-start;
+        }
+        .container2{
+            align-items: center;
+        }
+        .container3{
+            align-items: flex-end;
+        }
+        .container4{
+            height: 500px;
+        }
+        .container4 div{
+            /* auto 表示高度自适应，相当于是没有高度 */
+            height: auto;
+            align-items: stretch;
+        }
+        .container5{
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .container5 div{
+            width: auto;
+        }
+        .container6{
+            align-items: baseline;
+        }
+        .container6 div{
+            height: auto;
+        }
+        .container6 div:nth-child(1){
+            line-height: 50px;
+        }
+        .container6 div:nth-child(2){
+            line-height: 100px;
+        }
+        .container6 div:nth-child(3){
+            line-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h3>3)侧轴对齐 align-items 伸缩项目行在侧轴上的对齐方式</h3>
+    <p>flex-start：伸缩项目在侧轴起点边的外边距 紧靠住 该行在侧轴起始边。默认值</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>center：伸缩项目的外边距在该行的侧轴上居中放置</p>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>flex-end：伸缩项目在侧轴终点边的外边距 紧靠住 该行在侧轴终点边</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>stretch：伸缩项目拉伸填充整个伸缩容器</p>
+    <p>把容器转成弹性盒布局后，当项目没有设置宽度或者高度的时候，宽度和高度会默认进行拉伸，可以实现宽度和高度的自适应</p>
+    <div class="base container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>改变轴的方向</p>
+    <p>注意点：当容器的大小不够的时候，项目会自动伸缩</p>
+    <div class="base container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>baseline：伸缩项目根据伸缩项目的基线对齐</p>
+    <div class="base container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

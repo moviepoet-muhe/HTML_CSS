@@ -1,0 +1,229 @@
+/* 媒体查询限定 */
+@media all and (min-width:750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* APP 容器 */
+#app {
+  width: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: #f1f4f6;
+}
+
+/* 头部 */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5333rem;
+  width: 100%;
+  height: 1.0667rem;
+}
+
+header .iconfont {
+  color: #ee314d;
+  font-size: .5333rem;
+}
+
+header ul {
+  height: 100%;
+  width: 3.4667rem;
+  display: flex;
+  font-size: .3733rem;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+header ul li {
+  padding-top: .2667rem;
+  width: 1.0133rem;
+  text-align: center;
+  padding-bottom: .4rem;
+
+}
+
+header ul li:nth-child(2) {
+  color: #ee314d;
+  border-bottom: .0533rem solid red;
+}
+
+
+
+/* 内容区域 */
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+/* banner */
+.banner {
+  padding: 0 .5333rem;
+  margin-top: .1333rem;
+  height: 5.0667rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner .left {
+  width: 6.1333rem;
+  height: 100%;
+  border-radius: .1067rem;
+  overflow: hidden;
+}
+
+.banner .right .pic {
+  width: 2.6667rem;
+  height: 2.4533rem;
+  border-radius: .1067rem;
+  overflow: hidden;
+}
+
+.banner .right .pic:nth-child(2) {
+  margin-top: .16rem;
+}
+
+/* 频道看帖子 */
+.blog {
+  padding: .2667rem 0;
+
+}
+
+.blog .title {
+  padding: 0 .5333rem .2667rem;
+  border-left: .1333rem solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog .title h2 {
+  font-size: .5333rem;
+  font-weight: 900;
+}
+
+.blog .title div {
+  font-size: .4267rem;
+  color: #9b9b9b;
+}
+
+.blog .title div span {
+  margin-left: .1333rem;
+}
+
+/* 内容导航 */
+nav {
+  height: 5.8667rem;
+  padding: 0 .4rem;
+  border-bottom: .0267rem solid #9b9b9b;
+}
+
+nav ul {
+  width: 100%;
+  height: 4.9333rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+nav ul li {
+  height: 2.1333rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li p {
+  font-size: .3733rem;
+  font-weight: 600;
+}
+
+nav ul li span {
+  font-size: .32rem;
+  color: red;
+  font-weight: 600;
+}
+
+/* 每日热帖 */
+.hot-blog {
+  margin-top: .1333rem;
+  border-top: .0267rem solid #9b9b9b;
+}
+
+.blog .blog-user {
+  font-size: .3733rem;
+  padding-left: 1.2rem;
+  background: url(../img/touxiang.png) no-repeat 0.4rem;
+}
+
+.blog .blog-content {
+  margin-top: .2667rem;
+  font-size: .3733rem;
+  font-weight: 600;
+  padding-left: 1.2rem;
+  background: url(../img/jing.png) no-repeat 0.4rem;
+}
+
+/* 签到 */
+.qiandao {
+  position: absolute;
+  right: .2667rem;
+  bottom: 2.1333rem;
+  width: 1.3333rem;
+  height: 1.3333rem;
+  background: url(../img/qiandao.png) no-repeat center/cover;
+}
+
+
+
+
+
+
+
+/* 尾部 */
+footer {
+  border-top: .0267rem solid #9b9b9b;
+  height: 1.3333rem;
+  width: 100%;
+  /* background-color: gold; */
+}
+
+footer ul {
+  height: 100%;
+  display: flex;
+}
+
+footer ul li {
+  width: 20%;
+  height: 100%;
+  color: #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer ul li:first-child {
+  color: #dd363b;
+}
+
+footer ul li .iconfont {
+  font-size: .5333rem;
+  color: #9b9b9b;
+}
+
+footer ul li:first-child .iconfont {
+  color: #dd363b;
+}
+
+footer ul li p {
+  font-size: .32rem;
+}

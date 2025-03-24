@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base div{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            border-radius: 50%;
+        }
+        .container1{
+            flex-wrap: wrap;
+        }
+        .container2{
+            flex-wrap: wrap-reverse;
+        }
+        .container3{
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            /* flex-wrap: wrap; */
+        }
+        .container4{
+            /* flex-flow: wrap; */
+            /* flex-flow: column; */
+            flex-flow: column wrap;
+        }
+    </style>
+</head>
+<body>
+    <h3>4)换行 flex-wrap</h3>
+    <p>nowrap 不换行 默认值，不管超出还是不超出都不会换行</p>
+    <p>弹性盒布局会默认把项目进行伸缩，条件是容器位置不够的情况下。项目换行后，行和行之间会默认存在行距，容器没有高度的时候行距不会有</p>
+    <p>wrap 换行 一旦伸缩项目超出伸缩容器，那么就会换行</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+    <p>wrap-reverse 换行反向  主轴水平时，上下反向</p>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+    <p>主轴垂直时，左右反向</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+    <h3>伸缩流方向属性与换行属性缩写形式 flex-flow </h3>
+    <p>flex-flow：换行 伸缩方向; 两个值同时定义或者单独定义都生效，不分先后顺序</p>
+    <div class="base container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+</body>
+</html>

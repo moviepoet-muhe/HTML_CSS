@@ -1,0 +1,497 @@
+/* 版心居中 */
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* 网页头部 */
+.header {
+  height: 100px;
+}
+
+/* 头部版心 */
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* logo */
+.header .logo {
+  margin-top: 35px;
+}
+
+
+/* logo里的a链接 */
+.header .logo a {
+  display: block;
+  width: 283px;
+  height: 34px;
+  background-image: url(../img/logo.png);
+  font-size: 0;
+  transition: all .2s ease-in-out;
+}
+
+/* 鼠标移动到logo的a标记改变样式 */
+.header .logo a:hover {
+  /* 鼠标悬停时放大1.1倍 */
+  transform: scale(1.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+/* 搜索框 */
+.header .search {
+  display: flex;
+  margin-top: 35px;
+  width: 230px;
+  height: 30px;
+  border: 1px solid #e5e5e5;
+  transition: all .2s ease-in-out;
+}
+
+.header .search:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+/* 输入框 */
+.header .search .input {
+  flex: 1;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+
+/* 搜索按钮 */
+.header .search .btn {
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  background: #f1f1f1 url(../img/search.png) no-repeat center center;
+}
+
+
+/* 导航栏 */
+.nav {
+  height: 58px;
+  background-color: #303030;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav ul li {
+  flex: 1;
+  line-height: 58px;
+  text-align: center;
+}
+
+.nav ul li a {
+  display: block;
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.nav .sep {
+  margin: 9px 0;
+  height: 40px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.nav ul li a:hover {
+  background-color: gray;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, .15); */
+  transform: translateY(-2px);
+}
+
+/* banner区域 */
+.banner {
+  height: 460px;
+  background-color: #4e4e4c;
+}
+
+/* 版心 */
+.banner .wrapper {
+  height: 460px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* banner图片 */
+.banner .wrapper img {
+  width: 960px;
+  height: 460px;
+}
+
+/* banner图左右切换按钮 */
+.banner .switch {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 960px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+}
+
+/* banner图左右切换按钮 */
+.banner .switch span {
+  display: none;
+  width: 20px;
+  color: wheat;
+  background-color: gray;
+  opacity: .7;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  transition: all .2s ease-in-out;
+}
+
+/* 鼠标移动到banner版心出现左右切换按钮 */
+.banner .wrapper:hover span {
+  display: block;
+}
+
+/* 鼠标移动左右切换按钮改变按钮样式 */
+.banner .switch span:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* banner图底部切换按钮 */
+.banner .bottom-switch {
+  position: absolute;
+  display: none;
+  width: 240px;
+  height: 20px;
+  bottom: 20px;
+  left: 360px;
+}
+
+.banner .wrapper:hover .bottom-switch {
+  display: block;
+}
+
+.banner .bottom-switch ul {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rebeccapurple; */
+}
+
+.banner .bottom-switch ul li {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+/* 鼠标移动到banner图底部切换按钮改变按钮样式 */
+.banner .bottom-switch ul li:hover {
+  background-color: bisque;
+  width: 40px;
+  border-radius: 10px 10px;
+}
+
+/* 网页内容新闻区域 */
+/* 版心 */
+.news .wrapper {
+  display: flex;
+  height: 240px;
+}
+
+/* 左侧新闻列表 */
+.news .wrapper .left-news {
+  height: 240px;
+  width: 480px;
+  transition: all .2s ease-in-out;
+
+  /* background-color: wheat; */
+}
+
+.news .wrapper .left-news:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+  transform: translateY(-2px);
+}
+
+
+/* 中间与右侧新闻列表均摊版心剩下的空间 */
+.news .wrapper section {
+  flex: 1;
+  /* background-color: aqua; */
+}
+
+/* 三个新闻列表的标题 */
+.news .wrapper h3 {
+  margin-top: 34px;
+  margin-left: 20px;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* 左侧新闻列表 */
+.news .left-news-list {
+  margin-top: 20px;
+
+}
+
+/* 左侧新闻列表 */
+.news .left-news-list li {
+  line-height: 24px;
+  padding-left: 15px;
+  background: url(../img/list.png) no-repeat left center;
+}
+
+.news .left-news-list li a {
+  width: 465px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
+}
+
+/* 左侧新闻列表文字内容 */
+.news .left-news-list li .desc {
+  width: 300px;
+  /* background-color: yellow; */
+  /* 隐藏超出宽度的内容 */
+  overflow: hidden;
+  /* 禁止文字换行 */
+  white-space: nowrap;
+  /* 超出部分显示省略号 */
+  text-overflow: ellipsis;
+}
+
+/* 左侧新闻列表日期 */
+.news .left-news-list li .date {
+  margin-right: 10px;
+}
+
+/* 鼠标移动到新闻列表样式状态改变 */
+.news .left-news-list li a:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+/* 公司介绍板块 */
+.news .center-news {
+  background-color: #f1f1f1;
+  transition: all .2s ease-in-out;
+}
+
+.news .center-news:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.news .center-news .p1 {
+  line-height: 24px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.news .center-news .p1 span {
+  font-size: 12px;
+}
+
+.news .center-news .p2 {
+  font-size: 13px;
+  color: #979797;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+/* 人才招聘板块 */
+.news .right-news {
+  background: url(../img/horse.png) no-repeat right bottom;
+  transition: all .2s ease-in-out;
+}
+
+.news .right-news:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+  transform: translateY(-2px);
+}
+
+.news .right-news p {
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.news .right-news .btn {
+  width: 66px;
+  height: 20px;
+  color: white;
+  background-color: #afafaf;
+  border: none;
+  border-radius: 3px;
+  margin-left: 25px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+/* 网页内容市场项目区域 */
+.product .wrapper {
+  height: 240px;
+  /* background-color: wheat; */
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.product section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product section figure {
+  transition: all .2s ease-in-out;
+}
+
+.product section figure:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.product section figure figcaption {
+  width: 210px;
+}
+
+/* 网页尾部  */
+footer {
+  margin-top: 30px;
+  height: 250px;
+  background-color: #e5e5e5;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+/* 版心 */
+footer .wrapper {
+  display: flex;
+  padding-top: 30px;
+  height: 250px;
+  justify-content: space-between;
+  /* background-color: skyblue; */
+}
+
+/* 尾部三个标题 */
+footer h3 {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+/* 尾部左边 */
+footer .left {
+  width: 450px;
+  height: 200px;
+  /* background-color: wheat; */
+}
+
+footer .left .list-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 尾部所有 li */
+footer .list-box li {
+  line-height: 24px;
+  padding-left: 16px;
+  font-size: 12px;
+  background: url(../img/list-02.png) no-repeat 5px center;
+}
+
+/* 尾部左边第三列 ul margin-right: 50px; */
+footer .left .list-box ul:nth-child(3) {
+  margin-right: 50px;
+}
+
+/* 尾部中间 */
+footer .center {
+  width: 150px;
+  height: 200px;
+  /* background-color: red; */
+}
+
+footer .center .list-box {
+  margin-top: 10px;
+}
+
+/* 尾部右边 */
+footer .right {
+  width: 255px;
+  height: 200px;
+  /* background-color: gold; */
+}
+
+footer .right .map-pic {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 188px;
+  height: 144px;
+  background: url(../img/map.png) no-repeat;
+}
+
+footer a:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+
+
+/* 网页底部链接 */
+.link {
+  height: 80px;
+}
+
+.link .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link .link-list {
+  margin-top: 40px;
+}
+
+.link .link-list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link .link-list ul .sep {
+  margin-top: 2px;
+  display: block;
+  width: 2px;
+  height: 18px;
+  background-color: gray;
+  line-height: 30px;
+}
+
+.link .link-list ul li {
+  margin: 0 10px;
+}
+
+.link .ICP {
+  margin-top: 40px;
+}
+
+.link a:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}

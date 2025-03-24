@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            /* 值1表示阴影水平位置 值2表示阴影垂直位置 值3表示阴影模糊程度 值4表示阴影颜色 */
+            text-shadow: 5px 5px 5px orange,  10px 10px 5px hotpink;
+        }
+
+        div{
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+            margin: 50px auto;
+            /* 盒子阴影 值1表示阴影水平位置 值2表示阴影垂直位置 值3表示阴影模糊程度 值4表示阴影颜色 inset 表示内阴影*/
+            /* box-shadow: 1px 1px 6px black; */
+            transition: all 1s;
+        }
+        div:hover{
+            box-shadow: 1px 1px 6px black;
+            /* margin-top: -5px; */
+        }
+    </style>
+</head>
+<body>
+    <h1>王江喜欢黑丝</h1>
+
+    <div></div>
+</body>
+</html>

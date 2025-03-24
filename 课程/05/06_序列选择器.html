@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选中 ul 下的第一个 li 标记 */
+        ul li:first-child{
+            background-color: orange;
+        }
+        /* 选中 ul 下的第几个 li 标记 */
+        ul li:nth-child(3){
+            background-color: yellow;
+        }
+        /* 选中 ul 下的倒数第几个 li 标记 */
+        ul li:nth-last-child(3){
+            background-color: gold;
+        }
+        /* 选中 ul 下的最后一个 li 标记 */
+        ul li:last-child{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 注意点：只能选中同级别的第几个标记，不能被其他类型的标记给隔开，因为其他类型的标记也算在了父元素里面的字标记中 -->
+    <ul>
+        <h1>捣乱来了</h1>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+        <li>哈哈，今天下雨了，有些冷！</li>
+    </ul>
+</body>
+</html>

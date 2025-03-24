@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            height: 300px;
+            margin: 50px auto;
+        }
+        ul li{
+            list-style: none;
+            width: 120px;
+            height: 95px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin: 20px;
+            float: left;
+        }
+        ul li .pic1{
+            width: 110px;
+            height: 85px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1px solid #ccc;
+            /* 注意点：给图片设置 padding 值不会把图片自身撑大，只会撑出图片内容到图片边框之间的距离 */
+            padding: 2px;
+        }
+        ul li .pic2{
+            position: absolute;
+            width: 205px;
+            height: 155px;
+            border: 1px solid;
+            padding: 3px;
+            left: -40px;
+            top: -30px;
+            display: none;
+            z-index: 999;
+        }
+        ul li:hover .pic2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="./img/01.jpg" alt="" class="pic1">
+            <img src="./img/01.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/02.jpg" alt="" class="pic1">
+            <img src="./img/02.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/03.jpg" alt="" class="pic1">
+            <img src="./img/03.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/04.jpg" alt="" class="pic1">
+            <img src="./img/04.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/005.jpg" alt="" class="pic1">
+            <img src="./img/005.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/01.jpg" alt="" class="pic1">
+            <img src="./img/01.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/02.jpg" alt="" class="pic1">
+            <img src="./img/02.jpg" alt="" class="pic2">
+        </li>
+        <li>
+            <img src="./img/03.jpg" alt="" class="pic1">
+            <img src="./img/03.jpg" alt="" class="pic2">
+        </li>
+    </ul>
+</body>
+</html>

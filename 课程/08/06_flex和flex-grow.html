@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base div{
+            width: 200px;
+            height: 200px;
+        }
+        .base div:nth-child(1){
+            background-color: hotpink;
+        }
+        .base div:nth-child(2){
+            background-color: gold;
+        }
+        .base div:nth-child(3){
+            background-color: skyblue;
+        }
+
+        .container1 div:nth-child(1){
+            flex: 1;
+        }
+        .container2 div:nth-child(1){
+            flex: 1;
+        }
+        .container2 div:nth-child(2){
+            flex: 2;
+        }
+        .container2 div:nth-child(3){
+            flex: 3;
+        }
+        .container3 div:nth-child(1){
+            flex-grow: 1;
+        }
+        .container3 div:nth-child(2){
+            flex-grow: 2;
+        }
+        .container3 div:nth-child(3){
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h3>flex 可以用来分配容器里面的剩余空间，给项目设置的。可以指定一个项目在容器里面所占的比值（份数）</h3>
+    <p>情况1：flex 当给项目设置后，可以把项目容器的空间重新分配，把剩余空间沾满。其他项目如果没有设置 flex 属性的话，那么它自身的所占的位置不变</p>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>情况2：当给所有项目设置 flex 后，那么 flex 可以根据你后面数字的属性值来等比例划分容器的整个空间</p>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>flex-grow flex 可以用来分配容器里面的剩余空间，给项目设置的。可以指定一个项目在容器里面所占的比值（份数）</p>
+    <p>flex 是等比例划分容器空间的，而 flex-grow 是把容器剩余空间按照比例划分的，自身原来的所占空间比例不变。前提条件，所有项目都设置 flex-grow</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 20px 0;
+            color: red;
+        }
+        p{
+            text-align: center;
+            color: orange;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .base{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid orange;
+            margin: 20px auto;
+            display: flex;
+        }
+        .base div{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            border-radius: 50%;
+        }
+        .container1 div:nth-child(3){
+            flex-shrink: 0;
+        }
+        .container2 div:nth-child(3){
+            flex-basis: 300px;
+        }
+        .container3 div:nth-child(3){
+            flex: 0 0 150px;
+        }
+    </style>
+</head>
+<body>
+    <h3>11)flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小</h3>
+    <div class="base container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+    <h3>12)flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）</h3>
+    <div class="base container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+    <h3>flex 缩写形式</h3>
+    <p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto</p>
+    <div class="base container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+    </div>
+</body>
+</html>

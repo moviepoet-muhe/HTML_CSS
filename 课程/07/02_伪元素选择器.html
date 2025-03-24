@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 默认会显示在标记子元素的后面 */
+        .box1::after{
+            /* 注意点：content 属性可以为空，但是不能省略 */
+            /* content: "123"; */
+            /* content: url("https://hao123-static.cdn.bcebos.com/cms/2023-4/1682575299870/f37e8920e1cc.png"); */
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+        }
+         /* 默认会显示在标记子元素的前面 */
+        .box1::before{
+            content: "666";
+        }
+        /* p span{
+            font-size: 20px;
+            color: red;
+        } */
+
+        /* 只对第一行起作用 */
+        /* p::first-line{
+            font-size: 20px;
+            color: red;
+        } */
+        
+        /* 只对第一行里面的第一个字起作用 */
+        p::first-letter{
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><span>王江</span></div>
+
+    <!-- <p><span>今</span>天是2024年12月25日，王江记得昨天晚上还在跟朋友圈一起喝酒。突然醒来发现自己在一个陌生的世界..., 旁边的建筑都是古代类型的，身边还有很多的侍女...</p> -->
+    <p>今天是2024年12月25日，王江记得昨天晚上还在跟朋友圈一起喝酒。突然醒来发现自己在一个陌生的世界..., 旁边的建筑都是古代类型的，身边还有很多的侍女..., 今天是2024年12月25日，王江记得昨天晚上还在跟朋友圈一起喝酒。突然醒来发现自己在一个陌生的世界..., 旁边的建筑都是古代类型的，身边还有很多的侍女...</p>
+</body>
+</html>

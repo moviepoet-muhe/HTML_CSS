@@ -1,0 +1,578 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+body{
+    height: 2000px;
+    background-color: #f7fcff;
+}
+p{
+    display: block;
+}
+/* 右侧滚动栏 */
+.elevator{
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    background: #fff;
+}
+.elevator ul li{
+    width: 64px;
+    height: 72px;
+    text-align: center;
+    border: 1px solid;
+}
+.elevator ul li span{
+    display: block;
+    line-height: 24px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+.elevator ul li img{
+    margin-top: 5px;
+}
+/* ------------------------------------------顶部导航navtop */
+.navtop {
+    width: 100%;
+    height: 33px;
+    background-color: #ffffff;
+}
+
+/* 版心 */
+.navtop .content {
+    margin: 0 auto;
+    width: 1296px;
+    height: 33px;
+    background-color: #ffffff;
+    line-height: 33px;
+}
+
+/* ul列表共用 */
+.navtop .content li a {
+    color: #505259;
+}
+
+.navtop .content .style-red {
+    color: #f10215;
+}
+
+.navtop .content li {
+    float: left;
+    font-size: 12px;
+}
+
+/* 分割线 */
+.spacer {
+    margin: 14px 8px 0;
+    width: .5px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* -------------------------------------左侧ul */
+.navtop .content .left {
+    float: left;
+}
+
+.navtop .content .left li .position-icon {
+    float: left;
+    margin-top: 8px;
+}
+
+/* -------------------------------------右侧ul */
+.navtop .content .right {
+    float: right;
+}
+
+.navtop .content .right li {
+    float: left;
+    position: relative;
+}
+
+.navtop .content .right .icon-select {
+    float: right;
+    margin-top: 13px;
+    margin-left: 7px;
+}
+
+/* ------------------------------------------页面header */
+.header {
+    border-top: 1px solid #f3f7f7;
+    width: 1440px;
+    height: 134px;
+    background-color: #f6fefe;
+    margin: 0 auto;
+}
+
+.header .content {
+    width: 1296px;
+    height: 134px;
+    margin: 0 auto;
+}
+
+.header .content .logo {
+    float: left;
+    width: 169px;
+    height: 51px;
+    margin-top: 42px;
+}
+
+/* 搜索框 */
+.header .content .searchbox {
+    float: left;
+    width: 780px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 55px;
+    border: 2px solid #ff0f23;
+    border-radius: 8px;
+}
+
+/* 输入框 */
+.header .content .searchbox input {
+    float: left;
+    height: 40px;
+    width: 642px;
+    line-height: 40px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    margin-left: 21px;
+}
+
+/* 相机图标 */
+.header .content .searchbox .photo-icon {
+    float: left;
+    margin-top: 10px;
+}
+
+
+/* 搜索按钮 */
+.header .content .searchbox .search-btn {
+    float: right;
+    width: 80px;
+    height: 36px;
+    background-color: #ff0f23;
+    color: white;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* 热词 */
+.header .content .hotwords {
+    float: left;
+    width: 780px;
+    height: 14px;
+    margin-left: 55px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 12px;
+}
+
+.header .content .hotwords .style-red {
+    color: #f10215;
+}
+
+.header .content .hotwords a {
+    color: #505259;
+    float: left;
+    margin-right: 12px
+}
+
+/* ------------------------------------------内容区域content */
+.mid-content {
+    width: 1295px;
+    height: 417px;
+    background-color: olivedrab;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.mid-content .leftlist {
+    float: left;
+    width: 240px;
+    height: 385px;
+    background-color: #f6fefe;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.mid-content .leftlist ul li {
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 23px;
+}
+
+.mid-content .leftlist ul li a {
+    color: #1A1A1A;
+}
+
+.mid-content .leftlist ul li span {
+    margin: 0 4px;
+}
+
+.mid-content .leftlist ul li:nth-child(1) {
+    background: url("./img/list-icon.png") no-repeat 4px 10px;
+}
+
+.mid-content .leftlist ul li:nth-child(2) {
+    background: url("./img/list-icon.png") no-repeat 4px -24px;
+}
+
+.mid-content .leftlist ul li:nth-child(3) {
+    background: url("./img/list-icon.png") no-repeat 4px -58px;
+}
+
+.mid-content .leftlist ul li:nth-child(4) {
+    background: url("./img/list-icon.png") no-repeat 4px -92px;
+}
+
+.mid-content .leftlist ul li:nth-child(5) {
+    background: url("./img/list-icon.png") no-repeat 4px -124px;
+}
+
+.mid-content .leftlist ul li:nth-child(6) {
+    background: url("./img/list-icon.png") no-repeat 4px -158px;
+}
+
+.mid-content .leftlist ul li:nth-child(7) {
+    background: url("./img/list-icon.png") no-repeat 4px -192px;
+}
+
+.mid-content .leftlist ul li:nth-child(8) {
+    background: url("./img/list-icon.png") no-repeat 4px -226px;
+}
+
+.mid-content .leftlist ul li:nth-child(9) {
+    background: url("./img/list-icon.png") no-repeat 4px -260px;
+}
+
+.mid-content .leftlist ul li:nth-child(10) {
+    background: url("./img/list-icon.png") no-repeat 4px -294px;
+}
+
+.mid-content .leftlist ul li:nth-child(11) {
+    background: url("./img/list-icon.png") no-repeat 4px -328px;
+}
+
+/* -----------------------------------------中间内容 */
+.mid-content .center {
+    float: left;
+    width: 752px;
+    height: 385px;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+.mid-content .center .nav {
+    height: 48px;
+    position: relative;
+    background-color: #f6fefe;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.mid-content .center .nav li {
+    float: left;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.mid-content .center .nav li a {
+    color: #18191b;
+    font-weight: bolder;
+}
+
+.mid-content .center .spacer2 {
+    margin: 0 25px;
+    width: 1px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, .06);
+    margin-top: 16px;
+}
+
+.mid-content .center .nav li:nth-child(1) a {
+    color: #f10215;
+}
+
+.mid-content .center .nav .clock {
+    float: left;
+    margin-top: 16px;
+    margin-left: 27px;
+    margin-right: 11px;
+}
+
+/* ----------------------------------------轮播图 */
+.center .slider {
+    float: left;
+    width: 240px;
+    height: 320px;
+
+    border-radius: 8px;
+    position: relative;
+    background: url("./img/haier.png");
+}
+
+.center .slider ul li {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #d5d5d5;
+    float: left;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.center .slider ul {
+    position: absolute;
+    bottom: 11px;
+    left: 64px;
+}
+
+.center .slider ul li:hover {
+    width: 18px;
+    border-radius: 3px;
+    background-color: #fa1123;
+    border: 1px solid #be1e22;
+}
+
+/* ---------------------------------------四个商品 */
+.center .goods {
+    float: left;
+    width: 240px;
+    height: 320px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.center .goods div {
+    float: left;
+    width: 110px;
+    height: 150px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+}
+
+.center .goods div img {
+    border-radius: 8px;
+    border: 1px solid #f9f9f9;
+}
+
+.center .goods div:nth-child(1) {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.center .goods div:nth-child(3) {
+    margin-right: 16px;
+}
+
+/* --------------------------------图标 */
+.center .icon {
+    float: left;
+    width: 240px;
+    height: 320px;
+    border-radius: 8px;
+    margin-left: 16px;
+    background-color: #f6fefe;
+}
+
+.center .icon ul{
+    width: 240px;
+    height: 320px;
+    box-sizing: border-box;
+    background-color: #f6fefe;
+    border-radius: 8px;
+}
+
+.center .icon ul li{
+    float: left;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.center .icon ul li img{
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+.center .icon ul li span{
+    display: block;
+    font-size: 12px;
+    color: black;
+    margin-left: 30px;
+}
+
+/* --------------------------------------右侧注册 */
+.mid-content .rightlogin {
+    float: right;
+    width: 240px;
+    height: 385px;
+    background-color: #f6fefe;
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+/* 顶部logo区域 */
+.rightlogin .userlogo{
+    width: 240px;
+    height: 90px;
+    /* background-color: olive; */
+    border-radius: 8px;
+    position: relative;
+}
+.rightlogin .userlogo .userlogo-a{
+    display: block;
+    width: 66px;
+    height: 66px;
+}
+.rightlogin .userlogo .userlogo-img{
+    margin-top: 25px;
+    margin-left: 13px;
+    border-radius: 50%;
+}
+.rightlogin .userlogo .welcome{
+    position: absolute;
+    width: 154px;
+    height: 34px;
+    left: 86px;
+    top: 40px;
+    /* background-color: orange; */
+    font-family: PingFang SC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    color: #1A1A1A;
+}
+.rightlogin .userlogo .welcome .user_tip{
+    color: #1A1A1A;
+}
+.rightlogin .userlogo .welcome .login_area .user_reg{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    color: #505259;
+}
+
+/* 登录区域 */
+.rightlogin .login_info_container{
+    width: 240px;
+    height: 98px;
+    /* background-color: palevioletred; */
+}
+.rightlogin .login_info_container .login_title{
+    color: #1A1A1A;
+    text-align: center;
+    font-family: PingFang SC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top: 16px;
+}
+.rightlogin .login_info_container .login_desc{
+    color: #505259;
+    text-align: center;
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 12px;
+}
+.rightlogin .login_info_container .login_btn{
+    width: 216px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 6px;
+    background: #FF0F23;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 12px;
+    display: block;
+    text-align: center;
+}
+.rightlogin .login_status{
+    width: 240px;
+    height: 95px;
+    /* background-color: royalblue; */
+}
+.rightlogin .login_status .access{
+    width: 216px;
+    height: 40px;
+}
+
+.rightlogin .login_status .access .access_a{
+    float: left;
+    width: 48px;
+    height: 40px;
+    display: block;
+    /* background-color: #666;     */
+    margin-top: 16px;
+    text-align: center;
+}
+.rightlogin .login_status .access .access_a:nth-child(1){
+    margin-left: 18px;
+}
+.rightlogin .login_status .access .access_a:nth-child(2){
+    margin-left: 26px;
+}
+.rightlogin .login_status .access .access_a:nth-child(3){
+    margin-left: 26px;
+}
+
+.rightlogin .login_status .access img{
+    height: 20px;
+    width: 20px;
+
+}
+.rightlogin .login_status .access .access_a .access_disc{
+    color: #505259;
+    font-family: PingFang SC-Regular, Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    margin-top: 8px;
+}
+/* 会员 */
+.rightlogin .vip{
+    width: 240px;
+    height: 84px;
+    /* background-color: blue; */
+}
+
+.rightlogin .vip a{
+    display: block;
+    width: 104px;
+    height: 84px;
+    /* background-color: rebeccapurple; */
+    float: left;
+    margin-left: 12px;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+.rightlogin .vip a:nth-child(2){
+    margin-left: 8px;
+}

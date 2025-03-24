@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--
+        form 表单标记
+        + 作用
+          => 收集用户信息
+        + 特性
+          => 独占一行，自上而下排列
+        + form标记要配合其他的表单标记一起来使用
+        + 属性
+          => methods="get | post" 请求类型
+          => action 表示的是表单的请求地址（了解），里面放的是一个后台地址
+        + get 和 post 的区别（记忆）
+          => get 默认方式。表示向服务器获取数据
+          => get 安全性较低，输入的内容可以在 url（浏览器地址栏输入的内容） 地址里面看到
+          => get 数据量大小有限定，一般是 2 - 4kb 左右
+          => get 传输数据的速度比较快
+          => post 表示向服务传输数据
+          => post 安全性比较高的，因为它是通过 http post（上网的协议） 机制加密过的
+          => post 数据量大小理论上是没有限定的
+          => post 传输数据是比较慢的
+
+        input 表单框类型标记
+        + 特性
+          => 横向排列的
+        + 属性
+          => type 表示的是表单框的类型
+          => name 表示的是表单框的名称，一般是给后端使用的。如果是静态页面布局的话，那么表单上面的name属性可以省略不写
+          => checked 默认选中，一般给复选框和单选按钮使用
+          => disabled 禁用，可以给所有的表单框使用
+          => value 表示的是表单框的默认值
+          => placeholder 提示信息，当用户在表单里面输入的内容的时候，提示信息会自动隐藏。password 密码框里面也可以正常显示文字提示内容
+        select 下拉菜单标记
+        + option 选项标记
+        + option 属性
+          => selected 可以把选项放在第一位
+        textarea 多行文本域标记
+        + cols 表示一行可以放多少个字符
+        + rows 表示行数
+        + 注意点
+          => html属性中，如果属性和属性值是一样的情况下，可以省略属性值不写
+    -->
+    <form action="https://www.baidu.com" method="post">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+</body>
+</html>

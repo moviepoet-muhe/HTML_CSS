@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            min-width: 750px;
+            height: 100px;
+            background-color: gold;
+        }
+        .box2{
+            max-width: 1000px;
+            height: 100px;
+            background-color: gold;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        min-width 最小宽度
+        + 一个容器，可以给指定一个最小的宽度，大于设置的这个宽度那么说明就满足条件
+        + 大于最小宽度那么容器宽度就是自适应的，如果小于这个宽度那么就变成一个固定的宽度
+        max-width 最大宽度
+        + 一个容器，可以给指定一个最大的宽度，小于置的这个宽度那么说明就满足条件
+        + 如果小于最大宽度那么容器宽度是自适应的，如果大于这个宽度那么就变成一个固定的宽度
+    -->
+    <!-- <div class="box1">min-width 最小宽度。一个容器，可以给指定一个最小的宽度，大于设置的这个宽度那么说明就满足条件.大于设置的这个宽度那么说明就满足条件大于设置的这个宽度那么说明就满足条件</div> -->
+    <div class="box2">一个容器，可以给指定一个最大的宽度，小于置的这个宽度那么说明就满足条件</div>
+</body>
+</html>

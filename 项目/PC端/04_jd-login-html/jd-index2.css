@@ -1,0 +1,322 @@
+/* ------------------------------------------------重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------网页头部header */
+.header {
+    width: 990px;
+    height: 80px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+/* 头部左侧logo区域 */
+.header .logo {
+    float: left;
+    width: 290px;
+    height: 60px;
+    margin-top: 15px;
+    background: url("./img/l-icon.png") no-repeat right 20px;
+    /* background-color: yellowgreen; */
+}
+
+/* 头部右侧header-right */
+.header .header-right {
+    width: 132px;
+    height: 18px;
+    line-height: 18px;
+    float: right;
+    margin-top: 54px;
+    text-align: right;
+    background: url("./img/q-icon.png") no-repeat left 3px;
+    /* background-color: yellow; */
+}
+
+/* 头部右侧header-right下a标签 */
+.header .header-right a {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+}
+
+/* a标签悬停 */
+.header .header-right a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------提示区域tips */
+.tips {
+    width: 100%;
+    height: 39px;
+    background-color: #fff8f0;
+}
+
+/* 提示内容区域tips-content */
+.tips .tips-content {
+    width: 990px;
+    height: 39px;
+    margin: 0 auto;
+}
+
+/* 提示内容区域tips-content下p标签 */
+.tips .tips-content p {
+    font-size: 12px;
+    line-height: 39px;
+    color: #999999;
+    padding-left: 119px;
+    background: url("./img/xx.png") no-repeat 98px center;
+}
+
+/* p中的a标签 */
+.tips .tips-content a {
+    color: black
+}
+
+/* a标签悬停 */
+.tips .tips-content a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------广告图banner区域 */
+.banner {
+    width: 100%;
+    height: 472px;
+    background-color: #dd2e12;
+}
+
+/* banner内容banner-content */
+.banner .banner-content {
+    width: 990px;
+    height: 472px;
+    margin: 0 auto;
+    background: url("./img/bb.jpg") no-repeat center center;
+}
+
+/* banner内容右侧banner-content-right */
+.banner .banner-content .banner-content-right {
+    width: 347px;
+    height: 400px;
+    background-color: #fff;
+    float: right;
+    margin-top: 10px;
+}
+
+/* banner内容右侧顶部top */
+.banner .banner-content .banner-content-right .top {
+    height: 39px;
+    background-color: #fff8f0;
+}
+
+/* 右侧顶部top里的p */
+.banner .banner-content .banner-content-right .top p {
+    font-size: 12px;
+    line-height: 39px;
+    color: #999999;
+    padding-left: 50px;
+    background: url("./img/xx.png") no-repeat 27px center;
+}
+/* 登录标题区域 */
+.banner .banner-content .banner-content-right .login {
+    height: 54px;
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 17px;
+}
+/* 登录标题里的a */
+.banner .banner-content .banner-content-right .login a {
+    float: left;
+    width: 173px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 17px;
+    text-align: center;
+    color: #666666;
+}
+/* 右侧账号登录的a */
+.banner .banner-content .banner-content-right .login .account-login {
+    border-left: 1px solid #f4f4f4;
+    color: #e4393c;
+    /* 文字加粗 */
+    font-weight: bolder;
+}
+
+/* 用户登录div username */
+.banner-content .banner-content-right form .username{
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    margin: 0 auto;
+    margin-top: 33px;
+}
+/* 用户登录左侧span 用作图标 */
+.banner-content .banner-content-right form .username span{
+    width: 38px;
+    height: 38px;
+    background: #f3f3f3 url("./img/pwd-icons-new.png");
+    float: left;
+    border-right: 1px solid #bdbdbd;
+}
+/* 用户登录输入框input */
+.banner-content .banner-content-right form .username input{
+    width: 160px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #999999;
+    padding-left: 11px;
+    margin-top: 10px;
+}
+/* 密码输入div password */
+.banner-content .banner-content-right form .password{
+    margin-top: 20px;
+}
+/* 密码输入左侧span 用作图标 */
+.banner-content .banner-content-right form .password span{
+    background: #f3f3f3 url("./img/pwd-icons-new.png") -48px 0;
+}
+/* 忘记密码reset-password */
+.banner-content .banner-content-right form .reset-password{
+    height: 57px;
+    line-height: 57px;
+}
+/* 忘记密码reset-password下的a */
+.banner-content .banner-content-right form .reset-password a{
+    float: right;
+    padding-right: 22px;
+    color: #666666;
+    font-size: 14px;
+}
+/* 登录按钮btn */
+.banner-content .banner-content-right form .btn{
+    width: 304px;
+    height: 33px;
+    display: block;
+    margin: 0 auto;
+    background-color: #cb2a2d;
+}
+/* 登录按钮btn input */
+.banner-content .banner-content-right form .btn input{
+    width: 304px;
+    height: 33px;
+    border: none;
+    background-color: #e4393c;
+    border: 1px solid #e85356;
+    margin-top: 1px;
+    margin-left: 1px;
+    font-size: 18px;
+    color: #fff;
+}
+/* 底部bottom */
+.banner-content .banner-content-right .bottom{
+    height: 50px;
+    background-color: #fcfcfc;
+}
+/* 底部bottom左侧 */
+.banner-content .banner-content-right .bottom .left{
+    width: 115px;
+    height: 18px;
+    float: left;
+    margin-left: 22px;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 18px;
+}
+/* 底部bottom左侧的QQ */
+.banner-content .banner-content-right .bottom .left .qq{
+    width: 32px;
+    height: 18px;
+    background: url("./img/QQ-icon.png") no-repeat left center;
+    float: left;
+    padding-left: 23px;
+}
+/* QQ与微信之间的span用作分割“|” */
+.banner-content .banner-content-right .bottom .left span{
+    float: left;
+    width: 1px;
+    height: 11px;
+    background-color: #d5ccd5;
+    margin-top: 3px;
+}
+/* 底部bottom左侧的微信 */
+.banner-content .banner-content-right .bottom .left .wechat{
+    float: left;
+    padding-left: 35px;
+    background: url("./img/wechat-icon.png") no-repeat 10px center;
+}
+/* 底部bottom右侧 */
+.banner-content .banner-content-right .bottom .right{
+    width: 76px;
+    height: 18px;
+    float: right;
+    margin-top: 16px;
+    margin-right: 22px;
+}
+/* 底部bottom右侧a标签 */
+.banner-content .banner-content-right .bottom .right a{
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #b61d1d;
+    text-align: right;
+    background: url("./img/right-point-icon.png") no-repeat 8px center;
+}
+/* 网页页脚footer */
+.footer{
+    width: 100%;
+    height: 105px;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+/* 网页页脚footer下的ul */
+.footer ul {
+    width: 990px;
+    height: 15px;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/* 网页页脚footer下的ul li */
+.footer ul li{
+    float: left;
+    line-height: 15px;
+    font-size: 12px;
+    border: 1px solid red;
+}
+
+.footer ul li a{
+    float: left;
+    color: #666666;
+    border: 1px solid red;
+}
+
+.footer ul li span{
+    display: block;
+    width: 1px;
+    height: 11px;
+    margin-top: 2px;
+    margin-left: 60px;
+    margin-right: 20px;
+    background-color: #666666;
+} 
+
+.footer p{
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 12px;
+    width: 260px;
+    font-size: 12px;
+    color: #666666;
+    background-color: yellow;
+}

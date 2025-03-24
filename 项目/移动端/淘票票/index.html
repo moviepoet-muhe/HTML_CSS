@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="淘票票的关键词">
+  <meta name="description" content="淘票票的描述">
+  <title>淘票票</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <!-- 头部区域 -->
+    <header class="header">
+      <div class="city-c">
+        <i class="iconfont icon-taopiaopiao"></i>
+        <span>成都</span>
+        <i class="iconfont icon-xiala"></i>
+      </div>
+    </header>
+
+    <!-- 内容区域 -->
+    <main class="home-content">
+      <!-- banner -->
+      <div class="banner">
+        <ul>
+          <li><img src="./img/banner.jpg" alt=""></li>
+        </ul>
+      </div>
+
+      <!-- 导航 -->
+      <nav>
+        <ul>
+          <li><img src="./img/dianying.png" alt=""><span>电影</span></li>
+          <li><img src="./img/yanchanghui.png" alt=""><span>演唱会</span></li>
+          <li><img src="./img/yinyuejie.png" alt=""><span>音乐节</span></li>
+          <li><img src="./img/huaju.png" alt=""><span>话剧音乐剧</span></li>
+          <li><img src="./img/tuokouxiu.png" alt=""><span>脱口秀</span></li>
+        </ul>
+      </nav>
+
+      <!-- 福利中心 -->
+      <div class="benefit">
+        <!-- 头 公共样式-->
+        <div class="benefit-header module-header">
+          <div class="title-with-icon  module-header-title">
+            <img src="./img/benefit-icon.png" alt="">
+            <div class="module-title-txt">淘票票福利中心</div>
+          </div>
+        </div>
+        <!-- 内容 -->
+        <div class="benefit-card-container">
+
+          <!-- 左边卡片 -->
+          <div class="card card-left">
+            <!-- 卡片左侧 item -->
+            <div class="card-item-left">
+              <!-- 标题 -->
+              <div class="card-item-title">天天红包</div>
+              <!-- 副标题 -->
+              <div class="card-item-subtitle">福利抽不停</div>
+            </div>
+
+            <!-- 卡片右侧 item -->
+            <div class="card-item-right">
+              <!-- item 价格 -->
+              <div class="card-item-price">
+                ¥
+                <div class="price-low">8</div>
+                <div class="price-split"> ~ </div>
+                <div class="price-high">18</div>
+              </div>
+              <!-- item 按钮 -->
+              <button class="card-left-btn module-btn">去抽奖</button>
+            </div>
+          </div>
+
+          <!-- 右边卡片 -->
+          <div class="card card-right">
+            <!-- 卡片左侧 item -->
+            <div class="card-item-left">
+              <!-- 标题 -->
+              <div class="card-item-title">小小的我</div>
+              <!-- 副标题 -->
+              <div class="card-item-subtitle">干杯朋友</div>
+            </div>
+            <!-- 卡片右侧 item -->
+            <div class="card-item-right card-item-right-position">
+              <div class="card-item-icon"><img src="./img/cards-icon.png" alt=""></div>
+              <!-- item 按钮 -->
+              <button class="card-right-btn module-btn">特惠看</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 热映影片 心热预告 -->
+      <div class="hot-and-preview movie-list">
+        <!-- 电影列表头 -->
+        <div class="movie-list-header module-header">
+          <!-- 电影列表标题 -->
+          <div class="movie-list-title module-header-title">
+            <div class="module-title-txt tap-txt-1">热映影片</div>
+            <div class="module-title-txt tap-txt-2">新热预告</div>
+          </div>
+          <!-- 查看全部 -->
+          <div class="module-title-txt more">
+            全部
+            <i class="iconfont icon-jinru"></i>
+          </div>
+        </div>
+        <!-- 电影列表内容 -->
+        <div class="movie-list-content">
+          <!-- 滚动窗口 -->
+          <div class="movie-list-content-scroll">
+
+            <!-- 电影列表 ul  -->
+            <ul>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/kenan.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/podiyu.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 热映影片 心热预告 -->
+      <div class="hot-and-preview movie-list">
+        <!-- 电影列表头 -->
+        <div class="movie-list-header module-header">
+          <!-- 电影列表标题 -->
+          <div class="movie-list-title module-header-title">
+            <div class="module-title-txt tap-txt-1">热映影片</div>
+            <div class="module-title-txt tap-txt-2">新热预告</div>
+          </div>
+          <!-- 查看全部 -->
+          <div class="module-title-txt more">
+            全部
+            <i class="iconfont icon-jinru"></i>
+          </div>
+        </div>
+        <!-- 电影列表内容 -->
+        <div class="movie-list-content">
+          <!-- 滚动窗口 -->
+          <div class="movie-list-content-scroll">
+
+            <!-- 电影列表 ul  -->
+            <ul>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/kenan.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/podiyu.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- 热映影片 心热预告 -->
+      <div class="hot-and-preview movie-list">
+        <!-- 电影列表头 -->
+        <div class="movie-list-header module-header">
+          <!-- 电影列表标题 -->
+          <div class="movie-list-title module-header-title">
+            <div class="module-title-txt tap-txt-1">热映影片</div>
+            <div class="module-title-txt tap-txt-2">新热预告</div>
+          </div>
+          <!-- 查看全部 -->
+          <div class="module-title-txt more">
+            全部
+            <i class="iconfont icon-jinru"></i>
+          </div>
+        </div>
+        <!-- 电影列表内容 -->
+        <div class="movie-list-content">
+          <!-- 滚动窗口 -->
+          <div class="movie-list-content-scroll">
+
+            <!-- 电影列表 ul  -->
+            <ul>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/kenan.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/podiyu.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+              <!-- 第一个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/poster.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.8</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">小小的我</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第二个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">27.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">误杀3</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第三个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 默认标签 -->
+                          <div class="tag tag-default" style="background-color: rgba(0, 0, 0, 0.8);">IMAX 2D</div>
+                        </div>
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">11.1万</span>
+                        <span class="score-name">人想看</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">名侦探柯南：迷宫的十字路口</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+              </li>
+              <!-- 第四个电影 li -->
+              <li>
+                <!-- 电影与标题容器 -->
+                <div class="movie-container">
+                  <!-- 电影卡片 -->
+                  <div class="movie-show-card">
+
+                    <!-- 左上角 标签 tag -->
+                    <div class="tag-list">
+                      <!-- 总是显示 标签 -->
+                      <div class="tag-always-show">
+
+                        <!-- 标签项目  tag-item -->
+                        <div class="tag-item">
+                          <!-- 会员标签 -->
+                          <div class="tag tag-primary">会员买一赠一</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 电影海报 -->
+                    <div class="poster">
+                      <img src="./img/wusha.webp" alt="">
+                    </div>
+                    <!-- 评分与想看人数 -->
+                    <div class="score-wrap">
+                      <div class="score-text-wrap">
+                        <span class="score">评分</span>
+                        <span class="score-name">9.6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 电影标题 -->
+                  <span class="movie-title">破·地狱</span>
+                </div>
+                <!-- 购票按钮 -->
+                <button class="module-btn buy-btn">购票</button>
+                <div class="info-bg"></div>
+                <div class="info">19.9元起</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <!-- 尾部区域 -->
+    <footer class="footer">
+      <ul>
+        <li><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li><i class="iconfont icon-yingyuan"></i><span>影院</span></li>
+        <li><i class="iconfont icon-wode"></i><span>我的</span></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="./JS/flexbox.js"></script>
+</body>
+
+</html>

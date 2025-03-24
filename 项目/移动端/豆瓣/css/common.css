@@ -1,0 +1,126 @@
+/* 公共样式 */
+
+/* 媒体查询限制 */
+@media all and (min-width:750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* APP容器 */
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 10rem;
+  height: 100vh;
+  position: relative;
+
+}
+
+/* 版心 */
+.wrapper {
+  width: 9.5467rem;
+  margin: 0 auto;
+}
+
+/* 头部 header */
+header {
+  width: 100%;
+  height: 1.0667rem;
+  background: #171719;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+
+}
+
+header .right,
+header .left {
+  display: flex;
+  align-items: center;
+}
+
+header .iconfont {
+  font-size: .5333rem;
+  padding: 0 .2667rem;
+}
+
+
+/* 内容 main */
+main {
+  flex: 1;
+  overflow: auto;
+  background: #008100;
+}
+
+/* 尾部 footer */
+footer {
+  width: 100%;
+  height: 1.4667rem;
+  background: #2c2c2e;
+  position: relative;
+}
+
+footer ul {
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul li {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: #838287;
+}
+
+footer ul li p {
+  margin-top: .1333rem;
+  font-size: .2667rem;
+}
+
+footer ul li:last-child p {
+  margin-top: 0;
+}
+
+footer ul li .iconfont {
+  font-size: .5333rem;
+}
+
+footer ul li .me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: .8rem;
+  height: .8rem;
+  padding: .0533rem;
+  border-radius: 50%;
+  border: .0533rem solid #008100;
+}
+
+footer ul li .me img {
+  border-radius: 50%;
+}
+
+footer .sending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: .5333rem;
+  bottom: 1.9733rem;
+  width: 1.2267rem;
+  height: 1.2267rem;
+  background: #2dbf54;
+  border-radius: 50%;
+}
+
+footer .sending .iconfont {
+  font-size: .64rem;
+  color: #fff;
+}

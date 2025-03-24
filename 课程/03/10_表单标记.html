@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        form 表单标记
+        + 作用
+          => 收集用户信息
+        + 特性
+          => 独占一行，自上而下排列
+        + form标记要配合其他的表单标记一起来使用
+        input 表单框类型标记
+        + 特性
+          => 横向排列的
+        + 属性
+          => type 表示的是表单框的类型
+          => name 表示的是表单框的名称，一般是给后端使用的。如果是静态页面布局的话，
+          那么表单上面的name属性可以省略不写
+          => checked 默认选中，一般给复选框和单选按钮使用
+          => disabled 禁用，可以给所有的表单框使用
+          => value 表示的是表单框的默认值
+          => placeholder 提示信息，当用户在表单里面输入的内容的时候，提示信息会自动隐藏。
+          password 密码框里面也可以正常显示文字提示内容
+        select 下拉菜单标记
+        + option 选项标记
+        + option 属性
+          => selected 可以把选项放在第一位
+        textarea 多行文本域标记
+        + cols 表示一行可以放多少个字符
+        + rows 表示行数
+        + 注意点
+          => html属性中，如果属性和属性值是一样的情况下，可以省略属性值不写
+    -->
+    <form>
+        <!-- 文本框 -->
+        <!-- <p>用户名：<input type="text" value="请输入用户名"></p> -->
+        <p>用户名：<input type="text" placeholder="请输入用户名"></p>
+        <!-- 密码框 -->
+        <!-- <p>密码：<input type="password" value="请输入密码"></p> -->
+        <p>密码：<input type="password" placeholder="请输入密码"></p>
+        <!-- 单选框 -->
+        <p>
+            <!-- 
+                注意点：
+                + 其他表单框的name属性在静态布局的时候可以省略，但是 radio 单选按钮的name属性是不能省略的，
+                必须设置。如果不设置name属性和值那么单选和单选按钮直接无法切换
+                + 同一组单选按钮的name属性值必须设置一样，不同组的可以不一样 
+            -->
+            性别：
+            <input type="radio" name="gender" checked="checked"> 男
+            <input type="radio" name="gender"> 女
+        </p>
+        <!-- 复选框 -->
+        <p>
+            兴趣爱好：
+            <input type="checkbox" checked> rap
+            <input type="checkbox" checked> 篮球
+            <input type="checkbox" checked> 跳舞
+        </p>
+        <p>
+            婚姻状况：
+            <input type="radio" name="married"> 未婚
+            <input type="radio" name="married"> 离异
+        </p>
+        <p>
+            <input type="text">
+            <!-- 按钮 -->
+            <input type="button" value="59s" disabled>
+        </p>
+        <p>
+            请选择课程：
+            <select>
+                <!-- 注意点：option 选项标记的 value 必须设置，因为是给 js 后面获取值使用的，如果不设置那么 js 无法获取选项的值的 -->
+                <option value="JavaEE">JavaEE</option>
+                <option value="python数据分析">python数据分析</option>
+                <option value="HarmonyOS" selected>HarmonyOS</option>
+            </select>
+        </p>
+        <p>自我介绍：</p>
+        <!-- 多行文本域 -->
+        <textarea cols="30" rows="20"></textarea>
+        <p>
+            <!-- 重置按钮，当点击后会把之前输入的内容自动清空。如果不设置 value 属性，那么默认会自带 "重置" 的文本提示 -->
+            <input type="reset">
+        </p>
+        <p>
+            <!-- 提交按钮，当点击后会自动刷新页面。如果不设置 value 属性，那么默认会自带 "提交" 的文本提示 -->
+            <input type="submit" value="免费注册">
+        </p>
+    </form>
+</body>
+
+</html>

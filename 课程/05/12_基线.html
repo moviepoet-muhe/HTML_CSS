@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            background-color: red;
+        }
+        img{
+            /* 垂直对齐方式，只对内联和内联块元素起作用 top | bottom | middle | baseline */
+            /* 图片由于默认是以基线在网页中排列的，如果容器没有设置高度的话，那么图片会默认把容器底部撑大几像素（大概3px），现在就可以使用 vertical-align: top; 来解决 */
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        <img src="./img/1.jpg" alt="" width="100">
+        ajx 
+    -->
+    <div>
+        <img src="./img/1.jpg" alt="" width="100">
+        <!-- ajx  -->
+    </div>
+</body>
+</html>

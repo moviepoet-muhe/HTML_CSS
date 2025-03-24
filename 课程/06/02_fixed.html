@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        header{
+            width: 100%;
+            height: 40px;
+            background-color: #ccc;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            /* 注意点：如果没有指定定位的坐标，那么固定定位默认在原来标准流的位置上 */
+            position: fixed;
+            top: 200px;
+            right: 0;
+        }
+        .box span{
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>网页头部区域</header>
+    <div class="box">
+        <!-- &times; 预留字符，表示乘号 -->
+        <span>&times;</span>
+    </div>
+</body>
+</html>

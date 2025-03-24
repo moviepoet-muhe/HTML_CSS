@@ -1,0 +1,485 @@
+/* 公共样式 */
+/* 版心 */
+.wrapper {
+  margin: 0 auto;
+  width: 1270px;
+}
+
+/* ---------------------网页头部 */
+header {
+  height: 98px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* 头部版心 */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 68px;
+  width: 1200px;
+  /* background-color: hotpink; */
+}
+
+/* logo */
+.logo a {
+  display: block;
+  width: 294px;
+  height: 50px;
+  background: url(../img/logo.png);
+  font-size: 0;
+}
+
+/* logo右侧 */
+.header-wrapper .right {
+  width: 760px;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+
+/* 搜索输入区域 */
+.header-wrapper .right .search {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 24px;
+  /* background-color: skyblue; */
+}
+
+/* 搜索框左侧文字 */
+.header-wrapper .right .search .txt {
+  color: #999;
+  font-size: 12px;
+  background: url(../img/wwimg03.png) no-repeat right center;
+  padding-right: 16px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+/* 搜索框容器 */
+.header-wrapper .right .input-box {
+  display: flex;
+  width: 134px;
+  height: 22px;
+  background: #eaeaea;
+
+}
+
+/* 搜索框 */
+.header-wrapper .right .search .input-txt {
+  width: 108px;
+  height: 22px;
+  padding: 0 10px;
+  color: #999;
+  font-size: 13px;
+  line-height: 22px;
+  background: #eaeaea;
+}
+
+/* 搜索按钮 */
+.header-wrapper .right .search .input-btn {
+  width: 26px;
+  height: 22px;
+  background: url(../img/search.png) no-repeat center center;
+  cursor: pointer;
+
+}
+
+/* 语言选择 */
+.header-wrapper .right .search .lang {
+  background: url(../img/wwimg04.png) no-repeat;
+  margin-left: 18px;
+  padding-left: 50px;
+  z-index: 999999;
+}
+
+/* 语言选择控件 */
+.header-wrapper .right .search .lang .getlang {
+  width: 46px;
+  color: #999;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-left: 7px;
+  background: url(../img/wwimg03.png) no-repeat right center;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* 导航区域 */
+.header-wrapper .right nav {
+  width: 100%;
+  height: 44px;
+  /* background-color: gold; */
+}
+
+.header-wrapper .right nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-wrapper .right nav ul li:first-child a {
+  color: #0197d8;
+}
+
+.header-wrapper .right nav ul li a:hover {
+  color: #0197d8;
+}
+
+/* banner区域 */
+.banner {
+  width: 100%;
+}
+
+/* banner版心 */
+.banner-wrapper {
+  width: 1420px;
+  height: 478px;
+  margin: 0 auto;
+}
+
+/* 新闻中心 */
+.news {
+  margin-top: 40px;
+}
+
+.news .news-title {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.news ul {
+  padding-top: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news ul li {
+  width: 295px;
+}
+
+.news ul li a span {
+  display: block;
+}
+
+.news ul li a h4 {
+  color: #000;
+  padding: 10px 0 5px;
+  overflow: hidden;
+  height: 36px;
+  white-space: nowrap;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+
+.news ul li a p {
+  /* 使用弹性盒模型 */
+  display: -webkit-box;
+  /* 设置盒模型为纵向  */
+  -webkit-box-orient: vertical;
+  /* 限制显示两行 */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 22px;
+  height: 42px;
+
+}
+
+.news .more {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.news .more a {
+  display: inline-block;
+  background: #005197;
+  color: #fff;
+  margin: 0 auto;
+  padding: 8px 28px;
+  font-size: 12px;
+}
+
+/* 产品与服务 */
+.product {
+  padding-top: 65px;
+  padding-bottom: 20px;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+.product .product-title {
+  padding-bottom: 16px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.product .title-txt {
+  text-align: center;
+  padding-bottom: 16px;
+  line-height: 14px;
+}
+
+.product ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product ul li {
+  margin-top: 30px;
+  width: 402px;
+}
+
+.product ul li a span {
+  display: block;
+}
+
+.product ul li a {
+  color: #fff;
+  display: block;
+}
+
+.product ul li h3 {
+  padding-top: 8px;
+  padding-bottom: 1px;
+}
+
+.product ul li p {
+  height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 科技与创新 */
+
+.innovate {
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+}
+
+/* 科技与创新标题 */
+.innovate-title {
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
+
+/* 科技与创新内容 */
+.innovate-content {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.innovate-content .left {
+  width: 630px;
+  height: 100%;
+  position: relative;
+}
+
+.innovate-content .left ul li {
+  width: 630px;
+  height: 100%;
+}
+
+.innovate-content .left ul li a {
+  display: block;
+}
+
+/* 切换按钮  */
+.innovate-content .left .btn {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+}
+
+.innovate-content .left .iconfont {
+  color: #fff;
+  font-weight: 700;
+}
+
+.innovate-content .left .btn-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.innovate-content .left .btn-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.innovate-content .right {
+  width: 630px;
+  height: 100%;
+}
+
+.innovate-content .right ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.innovate-content .right ul li {
+  width: 309px;
+  height: 221px;
+  position: relative;
+}
+
+.innovate-content .right ul li a {
+  display: block;
+}
+
+.innovate-content .right ul li a p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.innovate-content .right ul li a p .icon-right {
+  float: right;
+}
+
+/* 公司概况 */
+.overview {
+  background: #eaeaea;
+  padding-bottom: 40px;
+}
+
+
+.overview ul {
+  display: flex;
+
+}
+
+.overview ul li {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width: 25%;
+  border-right: 1px solid #d0d0d1;
+  text-align: center;
+}
+
+.overview ul li h3 {
+  padding-bottom: 15px;
+}
+
+.overview ul li p {
+  padding-top: 5px;
+  height: 46px;
+  line-height: 20px;
+}
+
+.overview ul li img {
+  width: 41px;
+  height: 41px;
+}
+
+/* 网页尾部 */
+footer {
+  padding: 40px 0 50px;
+  background: #3A3A3A;
+  color: #fff;
+
+}
+
+footer .wrapper {
+  display: flex;
+}
+
+footer .left {
+  display: flex;
+  justify-content: space-evenly;
+  width: 840px;
+}
+
+footer .left ul {
+  width: 13%;
+}
+
+footer .left ul li h3 {
+  padding-bottom: 12px
+}
+
+footer .left ul li a {
+  color: #A6A6A6;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+
+footer .right {
+  border-left: 1px solid #A6A6A6;
+  padding-left: 30px;
+  text-align: center;
+}
+
+footer .right .scan {
+  display: flex;
+}
+
+footer .right .scan .scan-l {
+  margin-right: 20px;
+}
+
+footer .right .scan p {
+  padding: 15px 0;
+}
+
+footer .right .scan img {
+  width: 124px;
+  height: 124px;
+}
+
+footer .right .tel {
+  padding-top: 20px;
+}
+
+footer .right .tel span {
+  font-size: 30px;
+}
+
+/* 尾部链接 */
+
+.footerBottom {
+  background: #1a1a1a;
+  height: 60px;
+  color: #fff;
+}
+
+.footerBottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.footerBottom .wrapper a {
+  color: #fff;
+}

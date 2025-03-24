@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .box1{
+            background-color: orange;
+            z-index: 1;
+        }
+        .box2{
+            background-color: hotpink;
+            /* 告诉浏览器你需要使用定位的规则来解析代码 */
+            /* position: absolute; */
+            z-index: 2;
+        }
+        .box3{
+            background-color: gold;
+        }
+        span{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            position: absolute;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <span>123</span>
+</body>
+</html>

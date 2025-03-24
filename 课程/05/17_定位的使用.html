@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 800px;
+            height: 40px;
+            background-color: #ccc;
+            margin: 50px auto;
+        }
+        .nav li{
+            list-style: none;
+            float: left;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .nav span{
+            float: left;
+            margin-top: 16px;
+            background-color: red;
+            height: 10px;
+            width: 1px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav li:nth-of-type(7){
+            position: relative;
+        }
+        .nav li:nth-of-type(7) b{
+            position: absolute;
+            top: -10px;
+            right: 12px;
+            width: 33px;
+            height: 20px;
+            background: url("./img/201410111038.gif") no-repeat;
+            background-position-x: -68px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">首页</a></li><span></span>
+        <li><a href="#">购物商城</a></li><span></span>
+        <li><a href="#">购物车</a></li><span></span>
+        <li><a href="#">商品列表</a></li><span></span>
+        <li><a href="#">联系我们</a></li><span></span>
+        <li><a href="#">游戏</a></li><span></span>
+        <li><a href="#">时装</a><b></b></li><span></span>
+        <li><a href="#">鞋子</a></li>
+    </ul>
+</body>
+</html>

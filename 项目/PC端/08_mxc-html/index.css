@@ -1,0 +1,1171 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 清除浮动公共的类名 */
+.clear-float::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+/* 清除表单的默认样式的公共类名 */
+.clear-input {
+    border: none;
+    outline: none;
+}
+
+
+/* ------------------------------------header最上面区域header-top */
+.header-top {
+    width: 100%;
+    height: 25px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* header-top内容区域header-top-content */
+.header-top .header-top-content {
+    width: 1190px;
+    height: 25px;
+    margin: 0 auto;
+    /* background-color: greenyellow; */
+
+}
+
+/* header-top-content里的列表ul */
+.header-top .header-top-content ul {
+    width: 735px;
+    height: 16px;
+    float: right;
+    margin-top: 4px;
+
+}
+
+/* header-top-content里的列表ul下的li */
+.header-top-content ul li {
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    border-right: 1px solid #d4d4d4;
+
+}
+
+/* 列表li下的a标签 */
+.header-top-content ul li a {
+    color: #666666;
+}
+
+/* ul下面的第1个li的a标签 */
+.header-top-content ul li:nth-child(1) a {
+    color: #ff6704;
+}
+
+/* ul下面的第1个li的第2个a标签 */
+.header-top-content ul li a:nth-child(2) {
+    margin-left: 13px;
+    margin-right: 15px;
+}
+
+/* ul下面的第2个li */
+.header-top-content ul li:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 26px;
+    background: url("./img/select-down.png") no-repeat 82px center;
+}
+
+/* ul下面的第3个li */
+.header-top-content ul li:nth-child(3) {
+    padding-left: 30px;
+    background: url("./img/phone.png") no-repeat 15px center;
+}
+
+/* ul下面的第3个li的伪类选择器::after */
+.header-top-content ul li:nth-child(3)::after {
+    content: "";
+    padding-right: 26px;
+    background: url("./img/select-down.png") no-repeat center center;
+}
+
+/* ul下面的第4个li */
+.header-top-content ul li:nth-child(4) {
+    padding-left: 15px;
+    padding-right: 16px;
+}
+
+/* ul下面的第5个li */
+.header-top-content ul li:nth-child(5) {
+    padding-left: 35px;
+    padding-right: 16px;
+    background: url("./img/qq-icon.png") no-repeat 13px center;
+}
+
+/* ul下面的第6个li */
+.header-top-content ul li:nth-child(6) {
+    padding-left: 12px;
+    padding-right: 14px;
+}
+
+/* ul下面的第6个li里面的图片img */
+.header .content ul li:nth-child(6) img {
+    /* 图片本身下面有间距 */
+    float: left;
+}
+
+/* 鼠标移动到li里面a标签改变样式 */
+.header-top-content ul li a:hover {
+    color: rgb(244, 104, 3);
+}
+
+/* ------------------------------------网页头部区域header */
+.header {
+    width: 1190px;
+    height: 76px;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+}
+
+/* logo区域 */
+.header .logo {
+    float: left;
+    width: 421px;
+    height: 63px;
+    margin-top: 12px;
+}
+
+/* logo图片a标签 */
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./img/logo.png") no-repeat;
+
+}
+
+/* 中间区域header-center */
+.header .header-center {
+    float: left;
+    height: 50px;
+    width: 340px;
+    margin-left: 120px;
+    margin-top: 16px;
+    /* background-color: red; */
+}
+
+/* 搜索框表单 */
+.header .header-center form {
+    height: 30px;
+}
+
+/* 搜索框input */
+.header .header-center form input:nth-child(1) {
+    width: 265px;
+    height: 26px;
+    border: 2px solid #d5d5d5;
+    border-right: none;
+    float: left;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+/* 搜索按钮input */
+.header .header-center form input:nth-child(2) {
+    width: 65px;
+    height: 30px;
+    background-color: #444444;
+    float: left;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* 改变搜索按钮input样式 */
+.header .header-center form input:nth-child(2):hover {
+    transform: scale(1.1);
+}
+
+/* 改变搜索框input样式 */
+.header .header-center form input:nth-child(1):hover {
+    border-color: black;
+}
+
+/* 热搜p标签 */
+.header .header-center p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* “热搜” span */
+.header .header-center p span {
+    color: #fa7b05;
+    float: left;
+}
+
+/* 热搜p下的a标签 */
+.header .header-center p a {
+    color: #8a8a8a;
+    float: left;
+    margin-right: 6px;
+}
+
+/* 改变热搜p下的a标签 */
+.header .header-center p a:hover {
+    color: rgb(244, 104, 3);
+    font-size: 14px;
+
+}
+
+/* 右边区域购物车cart */
+.header .cart {
+    width: 80px;
+    height: 34px;
+    float: right;
+    margin-top: 20px;
+    background: url("./img/cart.png") no-repeat;
+    font-size: 12px;
+    line-height: 34px;
+    color: #646464;
+    padding-left: 46px;
+}
+
+/* 右边区域购物车cart下的span */
+.header .cart span {
+    color: #c70055;
+    margin-left: 4px;
+    margin-right: 3px;
+    font-weight: bolder;
+}
+
+/* 鼠标移动到购物车cart改变样式 */
+.header .cart:hover {
+    background: url("./img/cart-hover.png") no-repeat;
+}
+
+/* ------------------------------------网页导航nav */
+.nav {
+    width: 100%;
+    height: 34px;
+    background-color: #a21f25;
+    border-top: 1px solid #f7f5f6;
+}
+
+/* 网页导航版心nav-center */
+.nav .nav-center {
+    width: 1190px;
+    height: 34px;
+    margin: 0 auto;
+    /* background-color: #4304ca; */
+}
+
+.nav .nav-center .select-left {
+    width: 188px;
+    height: 34px;
+    float: left;
+    position: relative;
+}
+
+/* h3标题“所有商品分类” */
+.nav .nav-center .select-left h3 {
+    width: 100%;
+    height: 100%;
+    background: url("./img/default_icon_bg.png") no-repeat -126px -64px;
+}
+
+/* 鼠标滑过h3标题“所有商品分类”改变样式 */
+.nav .nav-center .select-left h3:hover {
+    background-position: -126px -97px;
+}
+
+/* 下拉菜单ul */
+.nav .nav-center .select-left ul {
+    width: 100%;
+    height: 385px;
+    background-color: #1f1909;
+    position: absolute;
+    z-index: 2;
+}
+
+/* 下拉菜单ul的li */
+.nav .nav-center .select-left ul li {
+    font-size: 14px;
+    padding-left: 60px;
+    line-height: 42px;
+}
+
+/* 下拉菜单ul的li的a */
+.nav .nav-center .select-left ul li a {
+    color: white;
+}
+
+/* 鼠标滑过下拉菜单ul的li的a改变样式 */
+.nav .nav-center .select-left ul li a:hover {
+    color: rgb(244, 104, 3);
+    font-size: 15px;
+}
+
+/* 设置第1个li背景图 */
+.nav .nav-center .select-left ul li:first-child {
+    background: url("./img/navicon.png") no-repeat 12px -50px;
+}
+
+/* 设置第2个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(2) {
+    background: url("./img/navicon.png") no-repeat 12px -93px;
+}
+
+/* 设置第3个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(3) {
+    background: url("./img/navicon.png") no-repeat 12px -138px;
+}
+
+/* 设置第4个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(4) {
+    background: url("./img/navicon.png") no-repeat 12px -187px;
+}
+
+/* 设置第5个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(5) {
+    background: url("./img/navicon.png") no-repeat 12px -233px;
+}
+
+/* 设置第6个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(6) {
+    background: url("./img/navicon.png") no-repeat 12px -280px;
+}
+
+/* 设置第7个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(7) {
+    background: url("./img/navicon.png") no-repeat 12px -331px;
+}
+
+/* 设置第8个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(8) {
+    background: url("./img/navicon.png") no-repeat 12px -378px;
+}
+
+/* 设置第9个li背景图 */
+.nav .nav-center .select-left ul li:nth-child(9) {
+    background: url("./img/navicon.png") no-repeat 12px -422px;
+}
+
+/* 中间导航菜单nav-content */
+.nav-center .nav-content {
+    width: 567px;
+    height: 100%;
+    /* background-color: #0fa08d; */
+    float: left;
+}
+
+/* 中间导航菜单nav-content 下的ul li */
+.nav-center .nav-content ul li {
+    font-size: 14px;
+    float: left;
+    line-height: 34px;
+    padding-left: 13px;
+    padding-right: 17px;
+    background: url("./img/border.png") no-repeat right center;
+}
+
+/* 中间导航菜单nav-content 下的ul li a */
+.nav-center .nav-content ul li a {
+    color: white;
+}
+
+/* 鼠标滑过中间导航菜单nav-content 下的ul li a */
+.nav-center .nav-content ul li a:hover {
+    color: #fde700;
+}
+
+/* 中间导航菜单nav-content 下的第1个li */
+.nav-center .nav-content ul li:first-child {
+    padding-left: 21px;
+    padding-right: 18px;
+    background-color: #464646;
+    background-image: none;
+}
+
+/* 中间导航菜单nav-content 下的最后1个li */
+.nav-center .nav-content ul li:last-child {
+    background-image: none;
+}
+
+/* 中间导航菜单nav-content 下的最后1个li的a  */
+.nav-center .nav-content ul li:last-child a {
+    color: #fde700;
+}
+
+/* 鼠标滑过中间导航菜单nav-content 下的ul li 改变样式 */
+.nav-center .nav-content ul li:hover {
+    background-color: #464646;
+}
+
+/* 右侧优惠nav-right */
+.nav-center .nav-right {
+    width: 210px;
+    height: 100%;
+    float: right;
+    /* background-color: #0fa08d; */
+}
+
+/* 右侧优惠nav-right  ul li */
+.nav-center .nav-right ul li {
+    float: left;
+    line-height: 16px;
+    font-size: 12px;
+    height: 16px;
+    border-right: 1px solid white;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 8px;
+}
+
+/* 右侧优惠nav-right  ul li a */
+.nav-center .nav-right ul li a {
+    color: white;
+}
+
+/* 右侧优惠nav-right  最后一个li的 a */
+.nav-center .nav-right ul li:last-child a {
+    color: #fecd04
+}
+
+/* 鼠标悬浮li a */
+.nav-center .nav-right ul li a:hover {
+    color: #fecd04
+}
+
+/* .nav-center .nav-right ul li:nth-child(2){
+    position: relative;
+}
+
+
+.nav-center .nav-right ul li:nth-child(2) span{
+    width: 33px;
+    height: 17px;
+    position: absolute;
+    right: -3px;
+    top: -20px;
+    background: url("./img/201410111038.gif") no-repeat -68px 0px;
+} */
+
+
+
+
+/* 给li的父元素设置相对浮动 */
+.nav-center .nav-right ul li:nth-child(2) {
+    position: relative;
+}
+
+/* 第2个li的伪类选择器用作“优惠” 设置绝对浮动 */
+.nav-center .nav-right ul li:nth-child(2)::after {
+    content: "";
+    width: 33px;
+    height: 17px;
+    background: url("./img/201410111038.gif") no-repeat -68px 0px;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+/* ------------------------------------banner区域banner */
+.banner-bg {
+    width: 100%;
+    height: 385px;
+    background-color: rgba(9, 218, 159, 0.477);
+}
+
+/* banner轮播图版心区域 */
+.banner-slider {
+    width: 1630px;
+    height: 385px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* banner轮播图下的 li */
+.banner-slider ul li {
+    position: absolute;
+}
+
+.banner-slider ul li:nth-child(2) {
+    z-index: 1;
+}
+
+
+/* 轮播图左右箭头Arrow-btn */
+.banner-slider .Arrow-btn {
+    width: 1390px;
+    height: 50px;
+    /* background-color: hotpink; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    float: left;
+    z-index: 2;
+    display: none;
+}
+
+/* 轮播图左右箭头Arrow-btn下的span */
+.banner-slider .Arrow-btn span {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(245, 222, 179, 0.539);
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+
+}
+
+/* 轮播图左右箭头Arrow-btn下的第二个span */
+.banner-slider .Arrow-btn span:nth-child(2) {
+    float: right;
+}
+
+/* 鼠标滑过banner图区域显示隐藏的左右箭头 */
+.banner-slider:hover .Arrow-btn {
+    display: block;
+}
+
+/* 轮播图下方切换数字ol */
+.banner-slider ol {
+    float: left;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    /* background-color: greenyellow; */
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+}
+
+/* 轮播图下方切换数字ol li */
+.banner-slider ol li {
+    float: left;
+    width: 20px;
+    height: 10px;
+    background-color: red;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid wheat;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.banner-slider ol li:last-child {
+    margin: 0px;
+}
+
+/* 鼠标滑过banner图区域显示隐藏的下方数字按钮 */
+.banner-slider:hover ol {
+    display: block;
+}
+
+/* 鼠标滑过下方数字按钮改变样式 */
+.banner-slider ol li:hover {
+    display: block;
+    background-color: wheat;
+}
+
+/* ------------------------------------内容body区域 content-body */
+.content-body {
+    width: 100%;
+    height: 1030px;
+    background-color: #f6f6f6;
+}
+
+.content-body .content-top-title {
+    width: 1190px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: #f6f6f6;
+}
+
+/* 内容上部区域标题第1个a */
+.content-top-title a:nth-child(1) {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+    margin-right: 20px;
+    /* background-color: red; */
+    float: left;
+    margin-top: 16px;
+}
+
+/* 内容上部区域标题第2个a */
+.content-top-title a:nth-child(2) {
+    float: left;
+    margin-top: 16px;
+    color: black;
+    /* background-color: rebeccapurple; */
+}
+
+/* 鼠标悬停第2个a */
+.content-top-title a:nth-child(2):hover {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+}
+
+/* 内容上部区域content-top */
+.content-top {
+    /* float: left; */
+    width: 1190px;
+    height: 214px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+/* 鞋子logo表格 */
+.content-top table {
+    width: 990px;
+    height: 214px;
+    border-spacing: 0px;
+    /* margin-top: 14px; */
+    background-color: #ffffff;
+    border-collapse: collapse;
+    float: left;
+}
+
+/* 设置格子 */
+.content-top table td {
+    width: 140px;
+    height: 70px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 改变最后一列格子的宽度 */
+.content-top table .last-td {
+    width: 142px;
+}
+
+/* 每个格子的背景图 */
+.content-top table tr:nth-child(1) td:nth-child(1) {
+    background: url("./img/shoes-logo.png") no-repeat -632px -6px;
+}
+
+/* 每个格子的背景图 */
+.content-top table tr:nth-child(1) td:nth-child(2) {
+    background: url("./img/shoes-logo.png") no-repeat -109px -177px;
+}
+
+.content-top table tr .test-td::before {
+    content: '';
+    display: block;
+    width: 201px;
+    height: 100px;
+    background: url("./img/biger.png") no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 500px;
+    display: none;
+}
+
+.test-td:hover.test-td::before {
+    display: block;
+}
+
+
+
+/* 右侧新品动态cotent-top-right */
+.cotent-top-right {
+    float: right;
+    width: 190px;
+    height: 214px;
+    /* background-color: hotpink; */
+
+}
+
+/* 右侧新品动态cotent-top-right下的ul */
+.cotent-top-right ul {
+    float: right;
+    height: 66px;
+    width: 188px;
+    border: 1px solid #f1f1f1;
+    color: #949494;
+}
+
+/* 列表文字li */
+.cotent-top-right ul li {
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+    list-style: square;
+    margin-left: 18px;
+
+}
+
+/* 列表文字li里的a */
+.cotent-top-right ul li a {
+    color: #777777;
+}
+
+.cotent-top-right ul li a:hover {
+    color: black;
+}
+
+/* 右侧新品动态标题图片.new-shoes-title */
+.cotent-top-right .new-shoes-title {
+    float: left;
+    width: 125px;
+    height: 34px;
+}
+
+/* 右侧新品动态鞋子图片外的a .new-shoes-img-a */
+.new-shoes-img-a {
+    display: block;
+    float: left;
+    width: 188px;
+    height: 110px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+/* 右侧新品动态鞋子图片.new-shoes-img */
+.new-shoes-img {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 182px;
+    height: 104px;
+}
+
+/* -------------------------------------内容中部区域content-center */
+.content-center {
+    height: 288px;
+    width: 1190px;
+
+    margin: 0 auto;
+    margin-top: 11px;
+}
+
+/* 商品dl右间距 */
+.content-center dl {
+    margin-right: 12px;
+}
+
+
+.content-center dl:nth-child(1) {
+    float: left;
+    width: 349px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 8px;
+    box-sizing: border-box;
+
+}
+
+/* 第1个商品dl下的dt 图片 */
+.content-center dl:nth-child(1) dt {
+    width: 334px;
+    height: 213px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+/* 第1个商品dl下的dd第1行文字span */
+.content-center dl dd .title1 {
+    margin-top: 10px;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: bolder;
+    color: #414141;
+    display: block;
+    margin-left: 8px;
+
+}
+
+/* 第1个商品dl下的dd第2行文字span */
+.content-center dl dd .title2 {
+    line-height: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+
+/* 第2个商品dl */
+.content-center dl:nth-child(2) {
+    float: left;
+    width: 204px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* 第2个商品dl下的dt 图片 */
+.content-center dl:nth-child(2) dt {
+    width: 194px;
+    height: 216px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+/* 第3个商品dl */
+.content-center dl:nth-child(3) {
+    float: left;
+    width: 213px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* 第3个商品dl下的dt 图片 */
+.content-center dl:nth-child(3) dt {
+    width: 203px;
+    height: 216px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+/* 第4个商品dl */
+.content-center dl:nth-child(4) {
+    float: left;
+    width: 188px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* 第4个商品dl下的dt 图片 */
+.content-center dl:nth-child(4) dt {
+    width: 178px;
+    height: 215px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+/* 第5个商品dl */
+.content-center dl:nth-child(5) {
+    float: left;
+    width: 188px;
+    height: 288px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 0px;
+}
+
+/* 第5个商品dl下的dt 图片 */
+.content-center dl:nth-child(5) dt {
+    width: 178px;
+    height: 215px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+/* --------------------------------------------内容下部区域content-bottom */
+.content-bottom {
+    width: 1190px;
+    height: 426px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* --------------内容下部区域左边板块 */
+.content-bottom-left {
+    float: left;
+    width: 190px;
+    height: 426px;
+    background-color: white;
+}
+
+.content-bottom-left .content-bottom-left-title {
+    float: left;
+}
+
+/* 鞋子logo图列表1 */
+.content-bottom-left .left-ul {
+    float: left;
+    width: 95px;
+    height: 201px;
+    border-right: 1px dashed #dbdbdb;
+}
+
+/* 鞋子logo图列表2 */
+.content-bottom-left .right-ul {
+    float: left;
+    width: 94px;
+    height: 201px;
+}
+
+/* 鞋子logo图列表1 li */
+.content-bottom-left .left-ul li {
+    width: 95px;
+    height: 40px;
+    border-bottom: 1px dashed #dbdbdb;
+
+}
+
+/* 鞋子logo图列表2 li */
+.content-bottom-left .right-ul li {
+    width: 94px;
+    height: 40px;
+    border-bottom: 1px dashed #dbdbdb;
+}
+
+/* 鞋子logo图列表1 li下的a */
+.content-bottom-left .left-ul li a {
+    display: block;
+    width: 95px;
+    height: 40px;
+}
+
+/* 鞋子logo图列表2 li下的a */
+.content-bottom-left .right-ul li a {
+    display: block;
+    width: 94px;
+    height: 40px;
+}
+
+/* 鞋子logo图列表1 第1个li背景图 */
+.content-bottom-left .left-ul li:nth-child(1) a {
+
+    background: url("./img/content-bottom-left-logo.png") no-repeat 0px -1012px;
+}
+
+/* 鞋子logo图列表2 第1个li背景图 */
+.content-bottom-left .right-ul li:nth-child(1) {
+    background: url("./img/content-bottom-left-logo.png") no-repeat 0px -152px;
+}
+
+/* 鞋类别列表shoes-class */
+.content-bottom-left .shoes-class {
+    float: left;
+    width: 95px;
+    margin-top: 5px;
+}
+/* 鞋名字列表shoes-name */
+.content-bottom-left .shoes-name {
+    float: left;
+    width: 94px;
+    margin-top: 5px;
+}
+
+.content-bottom-left .both li {
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.content-bottom-left .both li a {
+    color: #42393e;
+    margin-left: 8px;
+    font-weight: bolder;
+}
+/* --------------------中间板块 */
+.content-bottom .content-bottom-center{
+    float: left;
+    display: block;
+    height: 426px;
+    width: 393px;
+    margin-left: 10px;
+    background: url("./img/content-bottom-center-pic.png");
+
+}
+/* ---------------------右边板块 */
+/* 第一行 */
+.content-bottom .content-bottom-right1{
+    display: block;
+    width: 198px;
+    height: 244px;
+    float: left;
+    border-left: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+/* 第一行三个图片 */
+.content-bottom .pic1{
+    background: url("./img/content-bottom-right-pic1.png");
+}
+.content-bottom .pic2{
+    background: url("./img/content-bottom-right-pic2.png");
+}
+.content-bottom .pic3{
+    background: url("./img/content-bottom-right-pic3.png");
+}
+
+/* 第2行 */
+.content-bottom .content-bottom-right2{
+    display: block;
+    width: 198px;
+    height: 181px;
+    float: left;
+    border-left: 1px solid #d2d2d2;
+
+}
+/* 第2行3个图片 */
+.content-bottom .pic4{
+    background: url("./img/content-bottom-right-pic4.png");
+}
+.content-bottom .pic5{
+    background: url("./img/content-bottom-right-pic5.png");
+}
+.content-bottom .pic6{
+    background: url("./img/content-bottom-right-pic6.png");
+}
+
+.br{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #ce3c3d;
+    margin: 0 auto;
+}
+
+/* ------------------------------------页尾footer区域 */
+.footer{
+    height: 226px;
+    width: 100%;
+
+}
+/* footer版心区域 */
+.footer .footer-content{
+
+    width: 1190px;
+    height: 230px;
+
+    margin: 0 auto;
+}
+/* ---------------------footer左边区域 */
+.footer-content .footer-left{
+    float: left;
+    width: 195px;
+    height: 230px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #dedede;
+}
+
+.footer-content .footer-left .tel{
+    float: left;
+    margin-top: 15px;
+    margin-right: 6px;
+}
+
+.footer-content .footer-left .hot-tel {
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #999999;
+    margin-top: 17px;
+}
+.footer-content .footer-left .hot-tel2{
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 18px;
+}
+
+.footer-content .footer-left .tel-400{
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    color: #b60d12;
+    margin-top: 7px;
+}
+
+.footer-content .footer-left .time{
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+.footer-content .footer-left .time2{
+    margin-top: 5px;
+}
+
+.footer-content .footer-left .code{
+    float: left;
+    border: 1px solid #b3b3b3;
+    margin-top: 13px;
+    margin-right: 16px;
+}
+/* ---------------------footer右边区域 */
+.footer-right{
+    float: left;
+    width: 840px;
+    height: 150px;
+    margin-left: 52px;
+    margin-top: 20px;
+}
+.footer-right img:nth-child(1){
+    margin-right: 85px;
+}
+.footer-right img:nth-child(2){
+    margin-right: 88px;
+}
+.footer-right img:nth-child(3){
+    margin-right: 64px;
+}
+.footer-right img:nth-child(4){
+    float: right;
+}
+.footer-right img{
+    margin-bottom: 27px;
+}
+/* 列表 */
+
+.footer-right ul{
+    float: left;
+}
+
+.footer-right .list1{
+    margin-right: 176px;
+}
+.footer-right .list2{
+    margin-right: 150px;
+}
+.footer-right .list3{
+    margin-right: 176px;
+}
+.footer-right ul li{
+    font-size: 12px;
+    color: #9a9a9a;
+    line-height: 19px;
+}
+
+.footer-right .list-title{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+    height: 14px;
+    line-height: 14px;
+    font-weight: bolder;
+}

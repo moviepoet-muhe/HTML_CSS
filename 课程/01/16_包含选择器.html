@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 表示只有 div 下的 p 标记样式才起作用 */
+        /* div p{
+            color: red;
+        } */
+        
+        .header .content{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            color: red;
+        }
+        .aside .content{
+            width: 300px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .left p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        <p>王江喜欢黑丝</p>
+        <div>
+            <p>王江还喜欢美女</p>
+        </div> 
+    -->
+    <div class="header">
+        <div class="content">我是头部的内容区域</div>
+    </div>
+    <div class="aside">
+        <div class="content">我是侧边栏的内容区域</div>
+    </div>
+
+    <section class="left">
+        <p>哈哈</p>
+    </section>
+</body>
+</html>

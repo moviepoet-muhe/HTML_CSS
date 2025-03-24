@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 注意点：遇到相同的样式（冲突），选择器里面高权重的会把低权重的样式给覆盖掉 */
+        #box1{
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+        }
+        .box2{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box2">我是第一个盒子</div>
+</body>
+</html>
